@@ -1,0 +1,111 @@
+{
+  "total_prompts": 4,
+  "domain": "documentary",
+  "prompts": [
+    {
+      "metadata": {
+        "recommendation": "",
+        "related_entities": [],
+        "gap_source": "No documents found: Post-Ford career (1944–1968)",
+        "archive_backup": ""
+      },
+      "follow_ups": [
+        "What do you remember most vividly from this period?",
+        "Who were the key people in your life during this time?",
+        "Do you have any documents or photos from this period that might help researchers?"
+      ],
+      "priority": "High",
+      "priority_rank": 1,
+      "question": "Tell us about the period from 1944 to 1968 in Post-Ford career.",
+      "id": "gap_content_postford_career_19441968",
+      "answer_type": "oral_history",
+      "time_estimate_minutes": 15,
+      "gap_type": "content",
+      "entity": "Post-Ford career (1944–1968)"
+    },
+    {
+      "metadata": {
+        "recommendation": "",
+        "related_entities": [],
+        "gap_source": "No documents found: Sorensen departure from Ford (1944)",
+        "archive_backup": ""
+      },
+      "follow_ups": [
+        "What do you remember most vividly from this period?",
+        "Who were the key people in your life during this time?",
+        "Do you have any documents or photos from this period that might help researchers?"
+      ],
+      "priority": "High",
+      "priority_rank": 1,
+      "question": "Tell us about Sorensen departure from Ford (1944).",
+      "id": "gap_content_sorensen_departure_from_ford_1944",
+      "answer_type": "oral_history",
+      "time_estimate_minutes": 15,
+      "gap_type": "content",
+      "entity": "Sorensen departure from Ford (1944)"
+    },
+    {
+      "metadata": {
+        "recommendation": "Search Rigsarkivet for Danish records; Odense Stadsarkiv for family records pre-emigration",
+        "related_entities": [],
+        "gap_source": "No documents found: Sorensen early life (1881–1904)",
+        "archive_backup": ""
+      },
+      "follow_ups": [
+        "What do you remember most vividly from this period?",
+        "Who were the key people in your life during this time?",
+        "Do you have any documents or photos from this period that might help researchers?"
+      ],
+      "priority": "High",
+      "priority_rank": 1,
+      "question": "What can you tell us about your childhood and early career?",
+      "id": "gap_content_sorensen_early_life_18811904",
+      "answer_type": "oral_history",
+      "time_estimate_minutes": 15,
+      "gap_type": "content",
+      "entity": "Sorensen early life (1881–1904)"
+    },
+    {
+      "metadata": {
+        "recommendation": "Contact NARA RG 179 (War Production Board) and UT Dallas Aviation Archives",
+        "related_entities": [],
+        "gap_source": "No documents found: Willow Run construction (1941–1942)",
+        "archive_backup": ""
+      },
+      "follow_ups": [
+        "What do you remember most vividly from this period?",
+        "Who were the key people in your life during this time?",
+        "Do you have any documents or photos from this period that might help researchers?"
+      ],
+      "priority": "High",
+      "priority_rank": 1,
+      "question": "Tell us about the period from 1941 to 1942 in Willow Run construction.",
+      "id": "gap_content_willow_run_construction_19411942",
+      "answer_type": "oral_history",
+      "time_estimate_minutes": 15,
+      "gap_type": "content",
+      "entity": "Willow Run construction (1941–1942)"
+    },
+    {
+      "metadata": {
+        "recommendation": "Add API credentials to archive_credentials.json to unlock full search coverage",
+        "related_entities": [],
+        "gap_source": "Credentialed connectors not yet active: FamilySearch, Ancestry",
+        "archive_backup": ""
+      },
+      "follow_ups": [],
+      "priority": "Medium",
+      "priority_rank": 2,
+      "question": "[SYSTEM ACTION] Activate archive connector: FamilySearch, Ancestry",
+      "id": "gap_archive_coverage_familysearch_ancestry",
+      "answer_type": "system_action",
+      "time_estimate_minutes": 0,
+      "gap_type": "archive_coverage",
+      "entity": "FamilySearch, Ancestry"
+    }
+  ],
+  "subject": "Charles Emil Sorensen",
+  "total_gaps": 5,
+  "generated": "2026-06-07T15:52:53.5414684-04:00",
+  "guide_markdown": "# Interview Guide — Charles Emil Sorensen (documentary)\n\nGenerated: 2026-06-07 15:52:53\n\n**Total Questions:** System.Collections.Hashtable System.Collections.Hashtable System.Collections.Hashtable System.Collections.Hashtable.Count\n**Estimated Time:** 60 minutes\n\n---\n\n## Priority Questions\n\n### Q: Post-Ford career (1944–1968)\n\n**Prompt:** Tell us about the period from 1944 to 1968 in Post-Ford career.\n\n**Follow-ups:**\n- What do you remember most vividly from this period?\n- Who were the key people in your life during this time?\n- Do you have any documents or photos from this period that might help researchers?\n\n**Expected:** oral_history (~15 min)\n\n### Q: Sorensen departure from Ford (1944)\n\n**Prompt:** Tell us about Sorensen departure from Ford (1944).\n\n**Follow-ups:**\n- What do you remember most vividly from this period?\n- Who were the key people in your life during this time?\n- Do you have any documents or photos from this period that might help researchers?\n\n**Expected:** oral_history (~15 min)\n\n### Q: Sorensen early life (1881–1904)\n\n**Prompt:** What can you tell us about your childhood and early career?\n\n**Follow-ups:**\n- What do you remember most vividly from this period?\n- Who were the key people in your life during this time?\n- Do you have any documents or photos from this period that might help researchers?\n\n**Expected:** oral_history (~15 min)\n\n### Q: Willow Run construction (1941–1942)\n\n**Prompt:** Tell us about the period from 1941 to 1942 in Willow Run construction.\n\n**Follow-ups:**\n- What do you remember most vividly from this period?\n- Who were the key people in your life during this time?\n- Do you have any documents or photos from this period that might help researchers?\n\n**Expected:** oral_history (~15 min)\n\n## System Actions\n\n- **FamilySearch, Ancestry**: Add API credentials to archive_credentials.json to unlock full search coverage\n"
+}

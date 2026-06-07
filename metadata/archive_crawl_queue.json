@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "priority": "High",
+      "query": "Sorensen Denmark 1881 1904 early life",
+      "domain": "genealogy",
+      "max_attempts": 3,
+      "suggested_connectors": [
+        "Rigsarkivet",
+        "FamilySearch"
+      ],
+      "retry_backoff": 2000,
+      "gap_source": "Sorensen early life (1881–1904)"
+    },
+    {
+      "priority": "High",
+      "query": "Willow Run B-24 Ford construction 1941 1942",
+      "domain": "documentary",
+      "max_attempts": 3,
+      "suggested_connectors": [
+        "NARA",
+        "BensonFord"
+      ],
+      "retry_backoff": 2000,
+      "gap_source": "Willow Run construction (1941–1942)"
+    },
+    {
+      "priority": "High",
+      "query": "Charles Sorensen Ford departure 1944",
+      "domain": "documentary",
+      "max_attempts": 3,
+      "suggested_connectors": [
+        "BensonFord",
+        "BurtonDPL"
+      ],
+      "retry_backoff": 2000,
+      "gap_source": "Sorensen departure from Ford (1944)"
+    }
+  ],
+  "completed": 0,
+  "created": "2026-06-07T15:52:53.2859558-04:00",
+  "failed": 0
+}
