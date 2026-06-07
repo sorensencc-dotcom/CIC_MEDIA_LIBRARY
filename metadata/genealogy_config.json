@@ -1,0 +1,90 @@
+{
+  "geography": [
+    "United States",
+    "Europe"
+  ],
+  "family_lines": [
+    {
+      "line_id": "1-Paternal_Line",
+      "surnames": [
+        "Smith",
+        "Smyth"
+      ],
+      "narrative": "Paternal Line",
+      "keywords": [
+        "smith",
+        "smyth"
+      ]
+    },
+    {
+      "line_id": "2-Maternal_Line",
+      "surnames": [
+        "Johnson",
+        "Johnston"
+      ],
+      "narrative": "Maternal Line",
+      "keywords": [
+        "johnson",
+        "johnston"
+      ]
+    }
+  ],
+  "narrative_sections": [
+    {
+      "keywords": [
+        "arrived",
+        "ship",
+        "port",
+        "passenger",
+        "immigrant"
+      ],
+      "section": "Immigration Journey"
+    },
+    {
+      "keywords": [
+        "enlisted",
+        "discharge",
+        "regiment",
+        "war",
+        "service"
+      ],
+      "section": "Military Service"
+    },
+    {
+      "keywords": [
+        "deed",
+        "parcel",
+        "acres",
+        "lot",
+        "property"
+      ],
+      "section": "Land & Property"
+    },
+    {
+      "keywords": [
+        "born",
+        "died",
+        "married",
+        "birth",
+        "death",
+        "marriage"
+      ],
+      "section": "Vital Records"
+    },
+    {
+      "keywords": [
+        "church",
+        "parish",
+        "baptized",
+        "congregation",
+        "pastor"
+      ],
+      "section": "Community & Religion"
+    }
+  ],
+  "client_name": "Client Family Name",
+  "date_range": {
+    "earliest": 1800,
+    "latest": 1980
+  }
+}

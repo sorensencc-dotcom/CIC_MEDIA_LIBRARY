@@ -1,0 +1,1830 @@
+{
+  "generated": "2026-06-06T21:23:54Z",
+  "nodes": [
+    {
+      "id": "Organization_ford_motor_company",
+      "type": "Organization",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Ford Motor Company",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "label": "Odense, Denmark",
+      "type": "Place",
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "Place_odense_denmark",
+      "domain": "documentary",
+      "attributes": {}
+    },
+    {
+      "id": "Organization_production_planning_department",
+      "type": "Organization",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "Production Planning Department",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Organization_service_department",
+      "type": "Organization",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Service Department",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Organization_united_auto_workers",
+      "type": "Organization",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "United Auto Workers",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Person_lars_emil_sorensen",
+      "type": "Person",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "attributes": {},
+      "label": "Lars Emil Sorensen",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "label": "King Frederik X",
+      "type": "Person",
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "Person_king_frederik_x",
+      "domain": "documentary",
+      "attributes": {}
+    },
+    {
+      "label": "birth_certificate_1901.jpg",
+      "type": "Document",
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "Document_birth_certificate_1901_jpg",
+      "domain": "documentary",
+      "attributes": {
+        "doc_type": "Birth_Certificate",
+        "topic": "99-Uncategorized",
+        "date": "April 7, 1901"
+      }
+    },
+    {
+      "id": "Organization_willys_overland_motors",
+      "type": "Organization",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Willys-Overland Motors",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_dearborn",
+      "type": "Place",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "Dearborn",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Person_jens_christian_sorensen",
+      "type": "Person",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "attributes": {},
+      "label": "Jens Christian Sorensen",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Person_mette_kirstine_nielsen",
+      "type": "Person",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "attributes": {},
+      "label": "Mette Kirstine Nielsen",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_detroit",
+      "type": "Place",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "attributes": {},
+      "label": "Detroit",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_river_rouge",
+      "type": "Place",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "River Rouge",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_denmark",
+      "type": "Place",
+      "evidence": [
+        "birth_certificate_1901.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Denmark",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_river_rouge_plant",
+      "type": "Place",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "River Rouge Plant",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "label": "ford_memo_1943.jpg",
+      "type": "Document",
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "Document_ford_memo_1943_jpg",
+      "domain": "documentary",
+      "attributes": {
+        "doc_type": "Ford_Memo",
+        "topic": "99-Uncategorized",
+        "date": "March 14, 1943"
+      }
+    },
+    {
+      "id": "Place_michigan",
+      "type": "Place",
+      "evidence": [
+        "birth_certificate_1901.jpg",
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "Michigan",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Person_charles_emil_sorensen",
+      "type": "Person",
+      "evidence": [
+        "birth_certificate_1901.jpg",
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Charles Emil Sorensen",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_copenhagen",
+      "type": "Place",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "attributes": {},
+      "label": "Copenhagen",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_willow_run_bomber_plant",
+      "type": "Place",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Willow Run Bomber Plant",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Person_henry_ford",
+      "type": "Person",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Henry Ford",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Person_harry_bennett",
+      "type": "Person",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "attributes": {},
+      "label": "Harry Bennett",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "id": "Place_ypsilanti",
+      "type": "Place",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "attributes": {},
+      "label": "Ypsilanti",
+      "domain": "documentary",
+      "confidence": 1.0
+    },
+    {
+      "label": "fortune_article_1944.jpg",
+      "type": "Document",
+      "confidence": 1.0,
+      "evidence": [],
+      "id": "Document_fortune_article_1944_jpg",
+      "domain": "documentary",
+      "attributes": {
+        "doc_type": "Newspaper_Article",
+        "topic": "99-Uncategorized",
+        "date": "March 4, 1944"
+      }
+    }
+  ],
+  "edge_count": 135,
+  "source": "C:\\CIC_MEDIA_LIBRARY\\CIC\\media\\_test_ocr",
+  "edges": [
+    {
+      "rel_type": "geographic",
+      "id": "edge_0039",
+      "evidence": [
+        "birth_certificate_1901.jpg",
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0002",
+      "start_date": "1916",
+      "note": "Head of Ford Service Department",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1945",
+      "to": "Organization_ford_motor_company",
+      "relationship": "employed_by",
+      "from": "Person_harry_bennett",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0124",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Organization_service_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0121",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_willys_overland_motors",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0070",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_ford_motor_company",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0091",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0095",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Organization_united_auto_workers",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0012",
+      "start_date": "1942",
+      "evidence": [
+        "seed"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "located_in",
+      "from": "Place_willow_run_bomber_plant",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0021",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_copenhagen",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0007",
+      "start_date": "1881",
+      "evidence": [
+        "seed"
+      ],
+      "to": "Place_odense_denmark",
+      "relationship": "born_in",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0112",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_service_department",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0037",
+      "evidence": [
+        "birth_certificate_1901.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0115",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_service_department",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0119",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0079",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_production_planning_department",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0078",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0096",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "associated_with",
+      "from": "Organization_united_auto_workers",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0049",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_henry_ford",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0085",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0010",
+      "start_date": "1927",
+      "evidence": [
+        "seed"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "operates",
+      "from": "Organization_ford_motor_company",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0009",
+      "start_date": "1900",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1947",
+      "to": "Place_dearborn",
+      "relationship": "lived_in",
+      "from": "Person_henry_ford",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0054",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0116",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_willys_overland_motors",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0048",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0020",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0097",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "associated_with",
+      "from": "Organization_united_auto_workers",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0053",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0113",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_willys_overland_motors",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0008",
+      "start_date": "1905",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1944",
+      "to": "Place_detroit",
+      "relationship": "lived_in",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.9
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0038",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_detroit",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0056",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0126",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Organization_willys_overland_motors",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "family",
+      "id": "edge_0017",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "note": "Inferred from shared parentage on birth certificate",
+      "to": "Person_mette_kirstine_nielsen",
+      "relationship": "spouse_of",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.8
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0050",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_ford_motor_company",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0100",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Person_harry_bennett",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0086",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0077",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0123",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_willys_overland_motors",
+      "relationship": "associated_with",
+      "from": "Organization_service_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0034",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_detroit",
+      "relationship": "associated_with",
+      "from": "Person_mette_kirstine_nielsen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0122",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0082",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0072",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_united_auto_workers",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0132",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0060",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_henry_ford",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0133",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_ford_motor_company",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0063",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_united_auto_workers",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0076",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0089",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0001",
+      "start_date": "1905",
+      "note": "Production Engineer; rose to VP of Manufacturing",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1944",
+      "to": "Organization_ford_motor_company",
+      "relationship": "employed_by",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0018",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_lars_emil_sorensen",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0042",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_mette_kirstine_nielsen",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0125",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Organization_service_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0051",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_production_planning_department",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0027",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_copenhagen",
+      "relationship": "associated_with",
+      "from": "Person_lars_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0029",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_detroit",
+      "relationship": "associated_with",
+      "from": "Person_lars_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "family",
+      "parent_role": "mother",
+      "id": "edge_0016",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_lars_emil_sorensen",
+      "relationship": "parent_of",
+      "from": "Person_mette_kirstine_nielsen",
+      "confidence": 0.95
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0004",
+      "start_date": "1905",
+      "note": "Direct report; primary production relationship",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1944",
+      "to": "Person_henry_ford",
+      "relationship": "reported_to",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0031",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "associated_with",
+      "from": "Person_mette_kirstine_nielsen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0032",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_copenhagen",
+      "relationship": "associated_with",
+      "from": "Person_mette_kirstine_nielsen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0024",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0022",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0044",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_copenhagen",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0118",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_willys_overland_motors",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0110",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_production_planning_department",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0092",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0023",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_detroit",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0045",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0067",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0047",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0073",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0075",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0064",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0005",
+      "start_date": "1916",
+      "note": "Head of Ford Service Dept; close personal confidant",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1945",
+      "to": "Person_henry_ford",
+      "relationship": "reported_to",
+      "from": "Person_harry_bennett",
+      "confidence": 0.9
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0083",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0080",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_united_auto_workers",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0109",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_ford_motor_company",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0131",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0061",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_ford_motor_company",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0030",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Person_lars_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0006",
+      "start_date": "1930",
+      "note": "Competing power centers within Ford Motor Company",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1944",
+      "to": "Person_harry_bennett",
+      "relationship": "adversarial_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.85
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0074",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0014",
+      "start_date": "1950",
+      "note": "Danish heritage correspondence",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1968",
+      "to": "Person_king_frederik_x",
+      "relationship": "corresponded_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.85
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0107",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0104",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0040",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_jens_christian_sorensen",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0134",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_service_department",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0033",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Person_mette_kirstine_nielsen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0111",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_united_auto_workers",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0087",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_united_auto_workers",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0052",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_united_auto_workers",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0128",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_harry_bennett",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0081",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0129",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0059",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_harry_bennett",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0130",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_henry_ford",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0025",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_mette_kirstine_nielsen",
+      "relationship": "associated_with",
+      "from": "Person_lars_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0041",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_lars_emil_sorensen",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0117",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_service_department",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0071",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_production_planning_department",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0101",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0102",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Person_henry_ford",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0099",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "associated_with",
+      "from": "Organization_united_auto_workers",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "family",
+      "parent_role": "father",
+      "id": "edge_0015",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_lars_emil_sorensen",
+      "relationship": "parent_of",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.95
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0088",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0114",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0103",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0127",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Organization_willys_overland_motors",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0068",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0013",
+      "start_date": "1944",
+      "note": "President after leaving Ford",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1946",
+      "to": "Organization_willys_overland_motors",
+      "relationship": "employed_by",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.9
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0135",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_willys_overland_motors",
+      "relationship": "mentions",
+      "from": "Document_fortune_article_1944_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0028",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_denmark",
+      "relationship": "associated_with",
+      "from": "Person_lars_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0035",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_michigan",
+      "relationship": "associated_with",
+      "from": "Person_mette_kirstine_nielsen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0043",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0090",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0011",
+      "start_date": "1942",
+      "note": "Built for B-24 Liberator production",
+      "evidence": [
+        "seed"
+      ],
+      "end_date": "1945",
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "operates",
+      "from": "Organization_ford_motor_company",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0046",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_detroit",
+      "relationship": "mentions",
+      "from": "Document_birth_certificate_1901_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "organizational",
+      "id": "edge_0003",
+      "start_date": "1903",
+      "evidence": [
+        "seed"
+      ],
+      "to": "Organization_ford_motor_company",
+      "relationship": "founded",
+      "from": "Person_henry_ford",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0093",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "associated_with",
+      "from": "Organization_production_planning_department",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0120",
+      "evidence": [
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Organization_service_department",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0098",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Organization_united_auto_workers",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0069",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "associated_with",
+      "from": "Person_henry_ford",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0106",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0108",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0055",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0062",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Organization_production_planning_department",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0026",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_charles_emil_sorensen",
+      "relationship": "associated_with",
+      "from": "Person_lars_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0094",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_dearborn",
+      "relationship": "associated_with",
+      "from": "Organization_united_auto_workers",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0058",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_ypsilanti",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "associative",
+      "id": "edge_0019",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Person_mette_kirstine_nielsen",
+      "relationship": "associated_with",
+      "from": "Person_jens_christian_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "documentary",
+      "id": "edge_0105",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "mentions",
+      "from": "Document_ford_memo_1943_jpg",
+      "confidence": 1.0
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0066",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0057",
+      "evidence": [
+        "ford_memo_1943.jpg",
+        "fortune_article_1944.jpg"
+      ],
+      "to": "Place_willow_run_bomber_plant",
+      "relationship": "associated_with",
+      "from": "Person_harry_bennett",
+      "confidence": 0.55
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0036",
+      "evidence": [
+        "birth_certificate_1901.jpg"
+      ],
+      "to": "Place_copenhagen",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0065",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge",
+      "relationship": "associated_with",
+      "from": "Person_charles_emil_sorensen",
+      "confidence": 0.5
+    },
+    {
+      "rel_type": "geographic",
+      "id": "edge_0084",
+      "evidence": [
+        "ford_memo_1943.jpg"
+      ],
+      "to": "Place_river_rouge_plant",
+      "relationship": "associated_with",
+      "from": "Organization_ford_motor_company",
+      "confidence": 0.5
+    }
+  ],
+  "domain": "documentary",
+  "node_count": 25
+}

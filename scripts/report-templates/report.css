@@ -1,0 +1,252 @@
+/* CIC / Family History Research Report Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+  --ink:        #1a1a1a;
+  --muted:      #555;
+  --rule:       #c8b89a;
+  --accent:     #8b3a2a;
+  --bg:         #fdfaf6;
+  --sidebar-bg: #f4efe8;
+  --font-body:  'Crimson Pro', Georgia, serif;
+  --font-ui:    'Source Sans 3', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 11.5pt;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ── COVER ─────────────────────────────────────────────────── */
+.cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px;
+  border-bottom: 3px solid var(--rule);
+  page-break-after: always;
+}
+.cover-label {
+  font-family: var(--font-ui);
+  font-size: 9pt;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 28px;
+}
+.cover h1 {
+  font-size: 36pt;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: var(--ink);
+}
+.cover-subtitle {
+  font-size: 15pt;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 48px;
+}
+.cover-meta {
+  font-family: var(--font-ui);
+  font-size: 9.5pt;
+  color: var(--muted);
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 40px;
+}
+.cover-meta strong { color: var(--ink); }
+
+/* ── SECTIONS ───────────────────────────────────────────────── */
+.section {
+  padding: 52px 60px 40px;
+  border-bottom: 1px solid var(--rule);
+  page-break-inside: avoid;
+}
+.section:last-child { border-bottom: none; }
+
+h2 {
+  font-family: var(--font-ui);
+  font-size: 9pt;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+h3 {
+  font-size: 14pt;
+  font-weight: 600;
+  margin: 28px 0 10px;
+  color: var(--ink);
+}
+h4 {
+  font-family: var(--font-ui);
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin: 22px 0 6px;
+}
+p { margin-bottom: 14px; }
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+/* ── TIMELINE ───────────────────────────────────────────────── */
+.timeline { list-style: none; padding: 0; margin: 8px 0; }
+.timeline li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ede8e0;
+  align-items: baseline;
+}
+.timeline li:last-child { border-bottom: none; }
+.tl-date {
+  font-family: var(--font-ui);
+  font-size: 9pt;
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.tl-event { font-size: 11pt; }
+.tl-source {
+  grid-column: 2;
+  font-family: var(--font-ui);
+  font-size: 8.5pt;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* ── EVIDENCE REGISTER ──────────────────────────────────────── */
+.evidence-item {
+  margin-bottom: 18px;
+  padding-left: 18px;
+  border-left: 2px solid var(--rule);
+}
+.ev-citation {
+  font-size: 10.5pt;
+  font-style: italic;
+}
+.ev-meta {
+  font-family: var(--font-ui);
+  font-size: 8.5pt;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.ev-badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 7.5pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.ev-badge.primary { background: #e8f0e8; color: #2a6a2a; }
+.ev-badge.secondary { background: #e8e8f0; color: #2a2a6a; }
+
+/* ── GAP ANALYSIS ───────────────────────────────────────────── */
+.gap-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 0 12px;
+  margin-bottom: 14px;
+  align-items: baseline;
+}
+.gap-icon { color: var(--accent); font-size: 13pt; }
+.gap-text strong {
+  display: block;
+  font-size: 11pt;
+  margin-bottom: 2px;
+}
+.gap-text span {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 9pt;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+/* ── ENTITY SNAPSHOT ────────────────────────────────────────── */
+.entity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 16px 0;
+}
+.entity-card {
+  background: var(--sidebar-bg);
+  border-radius: 4px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--rule);
+}
+.entity-name {
+  font-size: 11pt;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.entity-type {
+  font-family: var(--font-ui);
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.entity-rels {
+  font-family: var(--font-ui);
+  font-size: 8.5pt;
+  color: var(--muted);
+}
+
+/* ── STATS BAR ──────────────────────────────────────────────── */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--sidebar-bg);
+  border-radius: 4px;
+}
+.stat-item { text-align: center; }
+.stat-value {
+  font-size: 22pt;
+  font-weight: 600;
+  color: var(--accent);
+  display: block;
+}
+.stat-label {
+  font-family: var(--font-ui);
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+}
+
+/* ── PRINT ──────────────────────────────────────────────────── */
+@media print {
+  body { max-width: none; background: white; }
+  .cover { page-break-after: always; }
+  .section { page-break-inside: avoid; }
+  h2, h3 { page-break-after: avoid; }
+}

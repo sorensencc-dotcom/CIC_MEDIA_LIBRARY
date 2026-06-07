@@ -1,0 +1,32 @@
+# Large media files — tracked by filename/hash only, not content
+media/**/*.tif
+media/**/*.tiff
+media/**/*.heic
+media/**/*.HEIC
+media/**/*.jpg
+media/**/*.jpeg
+media/**/*.JPG
+media/**/*.png
+media/**/*.PNG
+media/**/*.mp4
+media/**/*.mov
+media/**/*.MOV
+media/**/*.avi
+media/**/*.pdf
+
+# Generated report outputs (checked in separately when finalized)
+reports/*.html
+reports/*.zip
+
+# Temp and log files
+logs/*.log
+*.tmp
+*.bak
+
+# Credentials — NEVER commit
+metadata/archive_credentials.json
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
