@@ -1,0 +1,24 @@
+scripts/interview-ingest.ps1
+  s_78dd2ce89a29ad::t_8828ef8a527972 1-127,134-140,142-147,153-154,160-218,221-258,263-267,269-270,272-398
+  s_78dd2ce89a29ad::t_a5e036a8a1982c 259-262,268,271
+  s_78dd2ce89a29ad::t_34f397bc5e4f57 219-220
+  s_78dd2ce89a29ad::t_62538a902cbe55 128-133,141,148-152,155-159
+scripts/whisper-transcriber.ps1
+  s_78dd2ce89a29ad::t_6abf57fc302375 1-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "4723b5db0cfec7a919089b2eabf9fdd717510307",
+  "prompts": {},
+  "sessions": {
+    "s_78dd2ce89a29ad": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9233db7e-c227-4efe-9dc3-ba228b5776d0",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
