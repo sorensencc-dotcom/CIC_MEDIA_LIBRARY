@@ -1,0 +1,23 @@
+scripts/gap-to-interview-prompts.ps1
+  s_78dd2ce89a29ad::t_136b9b4e4bbe73 151-152
+  s_78dd2ce89a29ad::t_60d9ac74a0be4d 1-150,153-305
+scripts/reconciliation-loop.ps1
+  s_78dd2ce89a29ad::t_19526e025636b5 355
+  s_78dd2ce89a29ad::t_0eb75bc030bd92 1-354,356-411
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "83e038b54f20045d05248b7f8ac16cc22b5d4afc",
+  "prompts": {},
+  "sessions": {
+    "s_78dd2ce89a29ad": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9233db7e-c227-4efe-9dc3-ba228b5776d0",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
