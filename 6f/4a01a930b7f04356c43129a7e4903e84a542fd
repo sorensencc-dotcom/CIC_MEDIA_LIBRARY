@@ -1,0 +1,19 @@
+.gitignore
+  s_a5732a92a4d604::t_c927e7fb2d76b3 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "6f4a01a930b7f04356c43129a7e4903e84a542fd",
+  "prompts": {},
+  "sessions": {
+    "s_a5732a92a4d604": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "70c2ba25-27a8-4049-880c-0fbb3c107492",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
