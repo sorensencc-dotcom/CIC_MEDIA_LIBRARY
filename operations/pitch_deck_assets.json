@@ -1,0 +1,26 @@
+{
+  "total_images": 0,
+  "narrative_arc": [
+    {
+      "section": "The Engineering Mind",
+      "description": "Precision at scale: riveting, women workforce, mechanization",
+      "images": []
+    },
+    {
+      "section": "The Parallel Power Structure",
+      "description": "Bennett's authority, E&L Transport, organized crime connection",
+      "images": []
+    },
+    {
+      "section": "The Pivot & Decline",
+      "description": "Fortune profile → Roosevelt visit → Functional sidelining → Resignation",
+      "images": []
+    },
+    {
+      "section": "The Royal Dimension",
+      "description": "Danish heritage, King Frederik X correspondence",
+      "images": []
+    }
+  ],
+  "version": "1.0"
+}

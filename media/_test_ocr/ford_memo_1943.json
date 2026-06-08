@@ -1,0 +1,113 @@
+{
+  "metadata_version": "1.0",
+  "filename": "ford_memo_1943.jpg",
+  "content_description": {
+    "short_description": "Pending classification",
+    "ocr_text": "FORD MOTOR COMPANY\nRiver Rouge Plant, Dearborn, Michigan\n\nINTER-OFFICE MEMORANDUM\n\nLOR Charles Emil Sorensen\n\nFROM: Production Planning Department\n\nDATE: March 14, 1943\n\nRE: Willow Run B-24 Output Targets\n\nMr. Sorensen,\n\nAs discussed with Henry Ford and the War Production Boar\noutput at Willow Run is expected to reach 650 aircraft ps\n\nmonth by June 1943. Current rate is 405 units.\n\nHarry Bennett has approved the shift schedule revision.\nThe UAW contract amendment is pending Board review.\n\nPlease advise on the Ypsilanti workforce expansion plan.\n\nRespectfully,\nFord Motor Company",
+    "ocr_result": {
+      "needs_manual_review": false,
+      "ocr_confidence": 0.93,
+      "full_text": "FORD MOTOR COMPANY\nRiver Rouge Plant, Dearborn, Michigan\n\nINTER-OFFICE MEMORANDUM\n\nLOR Charles Emil Sorensen\n\nFROM: Production Planning Department\n\nDATE: March 14, 1943\n\nRE: Willow Run B-24 Output Targets\n\nMr. Sorensen,\n\nAs discussed with Henry Ford and the War Production Boar\noutput at Willow Run is expected to reach 650 aircraft ps\n\nmonth by June 1943. Current rate is 405 units.\n\nHarry Bennett has approved the shift schedule revision.\nThe UAW contract amendment is pending Board review.\n\nPlease advise on the Ypsilanti workforce expansion plan.\n\nRespectfully,\nFord Motor Company",
+      "ocr_date": "2026-06-06T20:54:52Z",
+      "ocr_language": "eng",
+      "extracted_fields": {
+        "detected_document_type": "Ford_Memo",
+        "detected_places": [
+          "Willow Run",
+          "River Rouge",
+          "Rouge Plant",
+          "Dearborn",
+          "Ypsilanti",
+          "Michigan"
+        ],
+        "document_type_score": 4,
+        "detected_dates": "March 14, 1943",
+        "detected_organizations": [
+          "Ford Motor Company",
+          "Ford Motor",
+          "UAW",
+          "Production Planning Department"
+        ],
+        "detected_names": [
+          "Charles Emil Sorensen",
+          "Sorensen",
+          "Harry Bennett",
+          "Bennett",
+          "Henry Ford",
+          "River Rouge Plant",
+          "Production Planning Department",
+          "Willow Run",
+          "Output Targets\n\nMr",
+          "War Production Boar",
+          "Ford Motor Company"
+        ]
+      },
+      "ocr_engine": "tesseract"
+    },
+    "entities_identified": {
+      "places": [
+        "Dearborn",
+        "Michigan",
+        "River Rouge",
+        "Rouge Plant",
+        "Willow Run",
+        "Ypsilanti"
+      ],
+      "people": [
+        "Bennett",
+        "Charles Emil Sorensen",
+        "Ford Motor Company",
+        "Harry Bennett",
+        "Henry Ford",
+        "Output Targets\n\nMr",
+        "Production Planning Department",
+        "River Rouge Plant",
+        "Sorensen",
+        "War Production Boar",
+        "Willow Run"
+      ],
+      "organizations": [
+        "Ford Motor",
+        "Ford Motor Company",
+        "Production Planning Department",
+        "UAW"
+      ]
+    },
+    "keywords": [
+      "ford",
+      "memo",
+      "1943.jpg"
+    ]
+  },
+  "usage_flags": {
+    "ocr_needs_review": false
+  },
+  "classification": {
+    "type": "Ford_Memo",
+    "primary_topic": "99-Uncategorized",
+    "documentary_significance": "Low",
+    "historical_date": "March 14, 1943",
+    "historical_date_confidence": "ocr"
+  },
+  "treatment_cross_refs": [
+    {
+      "relevance": "medium",
+      "section": "The Parallel Power Structure"
+    },
+    {
+      "relevance": "medium",
+      "section": "The Engineering Mind"
+    }
+  ],
+  "narrative_cross_refs": [
+    {
+      "relevance": "medium",
+      "section": "Military Service"
+    },
+    {
+      "relevance": "medium",
+      "section": "Vital Records"
+    }
+  ],
+  "domain": "genealogy"
+}

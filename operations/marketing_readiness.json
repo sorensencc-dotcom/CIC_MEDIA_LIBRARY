@@ -1,0 +1,38 @@
+{
+  "scorecards": [
+    {
+      "max_score": 100,
+      "category": "Social Media Calendar",
+      "next_actions": [
+        "Schedule posts on castironcharlie.com",
+        "Set up social media automation"
+      ],
+      "score": 0,
+      "status": "In Progress"
+    },
+    {
+      "max_score": 100,
+      "category": "Pitch Deck",
+      "next_actions": [
+        "Design slide layouts",
+        "Add presenter notes",
+        "Get producer feedback"
+      ],
+      "score": 0,
+      "status": "In Progress"
+    },
+    {
+      "max_score": 100,
+      "category": "Grant Applications",
+      "next_actions": [
+        "Draft NEH application",
+        "Compile rights clearances",
+        "Prepare budget narratives"
+      ],
+      "score": 0,
+      "status": "In Progress"
+    }
+  ],
+  "date_assessed": "2026-06-07",
+  "overall_readiness": 0
+}

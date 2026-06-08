@@ -1,207 +1,22 @@
 {
-  "metadata_version": "1.0",
-  "description": "Maps Google Drive folder structure to DAM topics for classification",
-  "last_updated": "2026-06-06T00:00:00Z",
-  "drive_root": "G:\\My Drive\\Cast Iron Charlie — Documentary Project",
-  "folder_mappings": [
-    {
-      "drive_folder": "Photographs — Family Archive/Personal & Residential/Helene",
-      "batch_name": "Batch_Helene_Yacht",
-      "dam_topic": "3-M_Y_Helene_Yacht",
-      "subtopic": "Photographs",
-      "file_count_estimate": 50,
-      "content_type": "yacht photographs and documentation",
-      "significance": "High",
-      "notes": "M/Y Helene yacht archive - historical photos and hull records"
-    },
-    {
-      "drive_folder": "Photographs — Family Archive/Willow Run (1941–1945)/Mike Kroll",
-      "batch_name": "Batch_Kroll_Willow_Run",
-      "dam_topic": "1-Willow_Run_Bomber_Plant",
-      "subtopic": "KD_Knockdown_Logistics",
-      "file_count_estimate": 50,
-      "content_type": "Kroll photographs (KD trucks, production, riveting)",
-      "significance": "High",
-      "notes": "Primary Kroll archive - production photos, technical documentation, route maps"
-    },
-    {
-      "drive_folder": "Photographs — Family Archive/Later in Life",
-      "batch_name": "Batch_Later_Life",
-      "dam_topic": "2-CESOR_Charles_Emil_Sorensen",
-      "subtopic": "Later_Life_Cuba_Virgin_Islands",
-      "file_count_estimate": 30,
-      "content_type": "Sorensen later life photographs",
-      "significance": "Medium",
-      "notes": "Charles Emil Sorensen photographs from retirement years - Cuba, Virgin Islands research"
-    },
-    {
-      "drive_folder": "Photographs — Family Archive/Willys-Overland & Jeep",
-      "batch_name": "Batch_Willys",
-      "dam_topic": "9-Willys_Overland_History",
-      "subtopic": "Photographs",
-      "file_count_estimate": 25,
-      "content_type": "Willys-Overland and Jeep related photographs",
-      "significance": "Medium",
-      "notes": "Willys period (June 1944 - departure) - Jeep production and company history"
-    },
-    {
-      "drive_folder": "Documents/Treatment",
-      "batch_name": "Batch_Treatment_Docs",
-      "dam_topic": "99-Uncategorized",
-      "document_type": "Treatment versions (v1-v13)",
-      "significance": "Critical",
-      "notes": "Narrative treatment versions - consolidate to v13_master.md in versions/ folder"
-    },
-    {
-      "drive_folder": "Documents/Family",
-      "batch_name": "Batch_Family_Docs",
-      "dam_topic": "2-CESOR_Charles_Emil_Sorensen",
-      "document_type": "Family correspondence and questions",
-      "significance": "High",
-      "notes": "QuestionsForDad versions, family archive documentation, Dad responses"
-    },
-    {
-      "drive_folder": "Documents/Source Articles",
-      "batch_name": "Batch_Source_Docs",
-      "dam_topic": "1-Willow_Run_Bomber_Plant",
-      "document_type": "Research source materials",
-      "significance": "High",
-      "notes": "Kroll essays, Sorensen timeline, riveting technical detail, Consolidated memos"
-    },
-    {
-      "drive_folder": "Documents/Correspondence",
-      "batch_name": "Batch_Correspondence",
-      "dam_topic": "6-Royal_Correspondence_Denmark",
-      "document_type": "Royal and official correspondence",
-      "significance": "High",
-      "notes": "King Frederik X letter (April 2026), diplomatic correspondence"
-    },
-    {
-      "drive_folder": "Research Logs",
-      "batch_name": "Batch_Research_Logs",
-      "dam_topic": "Mixed (by topic)",
-      "document_type": "Research logs by topic",
-      "significance": "Critical",
-      "notes": "Existing research logs - copy to research_logs/ folder with narrative essays format"
-    },
-    {
-      "drive_folder": "Research/Willow_Run_Production",
-      "batch_name": "Batch_Willow_Run_Research",
-      "dam_topic": "1-Willow_Run_Bomber_Plant",
-      "document_type": "Research materials - production, riveting, KD logistics",
-      "significance": "High",
-      "notes": "Technical documentation, production analyses, workforce data"
-    },
-    {
-      "drive_folder": "Research/Sorensen_Exit_Timeline",
-      "batch_name": "Batch_Sorensen_Exit",
-      "dam_topic": "2-CESOR_Charles_Emil_Sorensen",
-      "document_type": "Exit timeline research materials",
-      "significance": "High",
-      "notes": "March 1944 resignation - press coverage, oral history, timeline documentation"
-    }
-  ],
-  "classification_rules": {
-    "helene_yacht": {
-      "batch": "Batch_Helene_Yacht",
-      "classification": {
-        "type": "Photograph",
-        "primary_topic": "3-M_Y_Helene_Yacht",
-        "subtopic": "Photographs",
-        "documentary_significance": "High",
-        "historical_date_range": "1930-1945",
-        "treatment_cross_refs": [
-          "The Engineering Mind (yacht design/construction)",
-          "The Pivot & Decline (post-resignation leisure)"
-        ]
-      }
-    },
-    "kroll_willow_run": {
-      "batch": "Batch_Kroll_Willow_Run",
-      "classification": {
-        "type": "Photograph",
-        "primary_topic": "1-Willow_Run_Bomber_Plant",
-        "subtopic": "KD_Knockdown_Logistics",
-        "documentary_significance": "High",
-        "historical_date_range": "1942-1945",
-        "treatment_cross_refs": [
-          "The Engineering Mind (precision, women workforce)",
-          "The Parallel Power Structure (KD logistics, E&L Transport)"
-        ]
-      }
-    },
-    "sorensen_later_life": {
-      "batch": "Batch_Later_Life",
-      "classification": {
-        "type": "Photograph",
-        "primary_topic": "2-CESOR_Charles_Emil_Sorensen",
-        "subtopic": "Later_Life_Cuba_Virgin_Islands",
-        "documentary_significance": "Medium",
-        "historical_date_range": "1945-1968",
-        "treatment_cross_refs": [
-          "The Pivot & Decline (post-Ford activities)",
-          "The Royal Dimension (later life)"
-        ]
-      }
-    },
-    "willys_period": {
-      "batch": "Batch_Willys",
-      "classification": {
-        "type": "Photograph",
-        "primary_topic": "9-Willys_Overland_History",
-        "documentary_significance": "Medium",
-        "historical_date_range": "1944-1945",
-        "treatment_cross_refs": [
-          "The Pivot & Decline (Willys appointment June 1944)"
-        ]
-      }
-    },
-    "treatment_documents": {
-      "batch": "Batch_Treatment_Docs",
-      "classification": {
-        "type": "Document",
-        "primary_topic": "99-Uncategorized",
-        "documentary_significance": "Critical",
-        "action": "Copy latest version to versions/Treatment_v13_master.md"
-      }
-    },
-    "research_documents": {
-      "batch": "Batch_Source_Docs",
-      "classification": {
-        "type": "Document",
-        "primary_topic": "1-Willow_Run_Bomber_Plant",
-        "documentary_significance": "High",
-        "sources": [
-          "Kroll_TalesFromBomberPlant_COMPLETE",
-          "Sorensen_ResignationTimeline_March1944",
-          "Sorensen_RivetersAndProduction_TechnicalDetail",
-          "Consolidated_Aircraft_B24D_Transportation_Aug1941"
-        ]
-      }
-    }
+  "Photographs — Family Archive/Later in Life": {
+    "dam_topic": "2-CESOR_Charles_Emil_Sorensen",
+    "batch_name": "Batch_Sorensen_Later_Life",
+    "description": "Charles Emil Sorensen later life and personal photos"
   },
-  "rights_status_by_batch": {
-    "Batch_Helene_Yacht": "pre_cleared",
-    "Batch_Kroll_Willow_Run": "pre_cleared",
-    "Batch_Later_Life": "needs_clearance",
-    "Batch_Willys": "needs_clearance",
-    "Batch_Treatment_Docs": "internal_only",
-    "Batch_Family_Docs": "internal_only",
-    "Batch_Source_Docs": "needs_clearance",
-    "Batch_Correspondence": "pre_cleared",
-    "Batch_Research_Logs": "internal_only"
+  "Photographs — Family Archive/Personal & Residential/Helene": {
+    "dam_topic": "3-M_Y_Helene_Yacht",
+    "batch_name": "Batch_Helene_Yacht",
+    "description": "M/Y Helene yacht photographs from family archive"
   },
-  "batch_processing_order": [
-    "Batch_Helene_Yacht",
-    "Batch_Kroll_Willow_Run",
-    "Batch_Later_Life",
-    "Batch_Willys",
-    "Batch_Documents",
-    "Batch_Treatment_Docs",
-    "Batch_Family_Docs",
-    "Batch_Source_Docs",
-    "Batch_Correspondence",
-    "Batch_Research_Logs"
-  ],
-  "notes": "This mapping ensures all Drive content is classified consistently into DAM topics. Use during classification phase to auto-populate topic assignments."
+  "Photographs — Family Archive/Willow Run (1941–1945)/Mike Kroll": {
+    "dam_topic": "1-Willow_Run_Bomber_Plant",
+    "batch_name": "Batch_Kroll_Willow_Run",
+    "description": "Kroll Willow Run photographs and research images"
+  },
+  "Photographs — Family Archive/Willys-Overland & Jeep": {
+    "dam_topic": "9-Willys_Overland_History",
+    "batch_name": "Batch_Willys_Photos",
+    "description": "Willys-Overland and Jeep related photographs"
+  }
 }

@@ -1,0 +1,36 @@
+{
+  "total_posts": 0,
+  "month": "June 2026",
+  "version": "1.0",
+  "weeks": [
+    {
+      "posts": [],
+      "post_count": 0,
+      "week": "Week 1",
+      "description": "Showcase precision at scale: 313K rivets per aircraft, ±0.002 tolerance",
+      "theme": "The Engineering Mind: Riveting Precision"
+    },
+    {
+      "posts": [],
+      "post_count": 0,
+      "week": "Week 2",
+      "description": "E&L Transport, KD logistics, 1,094 knockdown kits",
+      "theme": "The Parallel Power Structure: Transport Innovation"
+    },
+    {
+      "posts": [],
+      "post_count": 0,
+      "week": "Week 3",
+      "description": "Fortune magazine profile to March 1944 resignation",
+      "theme": "The Pivot & Decline: Sorensen's Exit"
+    },
+    {
+      "posts": [],
+      "post_count": 0,
+      "week": "Week 4",
+      "description": "King Frederik X correspondence, family legacy",
+      "theme": "The Royal Dimension: Danish Heritage"
+    }
+  ],
+  "cadence": "1-3 posts per week"
+}

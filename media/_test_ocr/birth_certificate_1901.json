@@ -1,0 +1,91 @@
+{
+  "metadata_version": "1.0",
+  "filename": "birth_certificate_1901.jpg",
+  "content_description": {
+    "short_description": "Pending classification",
+    "ocr_text": "STATE OF MICHIGAN\nCERTIFICATE OF BIRTH\n\nRegistration No. 4471\n\nFull Name of Child: Lars Emil Sorensen\nDate of Birth: April 7, 1901\nPlace of Birth: Detroit, Wayne County, Michigan\n\nFather: Jens Christian Sorensen\nBorn: Copenhagen, Denmark\nAge: 34\n\nMother: Mette Kirstine Nielsen\nBorn: Aarhus, Denmark\nAge: 29\n\nAttending Physician: Dr. Harold E. Mason\n\nCertified this 9th day of April, 1901\nCounty Registrar, Wayne County",
+    "ocr_result": {
+      "needs_manual_review": false,
+      "ocr_confidence": 0.88,
+      "full_text": "STATE OF MICHIGAN\nCERTIFICATE OF BIRTH\n\nRegistration No. 4471\n\nFull Name of Child: Lars Emil Sorensen\nDate of Birth: April 7, 1901\nPlace of Birth: Detroit, Wayne County, Michigan\n\nFather: Jens Christian Sorensen\nBorn: Copenhagen, Denmark\nAge: 34\n\nMother: Mette Kirstine Nielsen\nBorn: Aarhus, Denmark\nAge: 29\n\nAttending Physician: Dr. Harold E. Mason\n\nCertified this 9th day of April, 1901\nCounty Registrar, Wayne County",
+      "ocr_date": "2026-06-06T20:54:51Z",
+      "ocr_language": "eng",
+      "extracted_fields": {
+        "detected_document_type": "Unknown",
+        "detected_places": [
+          "Detroit",
+          "Denmark",
+          "Copenhagen",
+          "Michigan"
+        ],
+        "document_type_score": 0,
+        "detected_dates": "April 7, 1901",
+        "detected_organizations": "Wayne County",
+        "detected_names": [
+          "Sorensen",
+          "Registration No",
+          "Full Name",
+          "Lars Emil Sorensen",
+          "Wayne County",
+          "Michigan\n\nFather",
+          "Jens Christian Sorensen",
+          "Denmark\nAge",
+          "Mette Kirstine Nielsen",
+          "Attending Physician",
+          "Mason\n\nCertified",
+          "County Registrar"
+        ]
+      },
+      "ocr_engine": "tesseract"
+    },
+    "entities_identified": {
+      "places": [
+        "Copenhagen",
+        "Denmark",
+        "Detroit",
+        "Michigan"
+      ],
+      "people": [
+        "Attending Physician",
+        "County Registrar",
+        "Denmark\nAge",
+        "Full Name",
+        "Jens Christian Sorensen",
+        "Lars Emil Sorensen",
+        "Mason\n\nCertified",
+        "Mette Kirstine Nielsen",
+        "Michigan\n\nFather",
+        "Registration No",
+        "Sorensen",
+        "Wayne County"
+      ],
+      "organizations": [
+        "Wayne County"
+      ]
+    },
+    "keywords": [
+      "birth",
+      "certificate",
+      "1901.jpg"
+    ]
+  },
+  "usage_flags": {
+    "ocr_needs_review": false
+  },
+  "classification": {
+    "type": "Birth_Certificate",
+    "primary_topic": "99-Uncategorized",
+    "documentary_significance": "High",
+    "historical_date": "April 7, 1901",
+    "historical_date_confidence": "ocr"
+  },
+  "treatment_cross_refs": {
+    "relevance": "medium",
+    "section": "The Royal Dimension"
+  },
+  "narrative_cross_refs": {
+    "relevance": "medium",
+    "section": "Vital Records"
+  },
+  "domain": "genealogy"
+}

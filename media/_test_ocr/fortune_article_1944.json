@@ -1,0 +1,109 @@
+{
+  "metadata_version": "1.0",
+  "filename": "fortune_article_1944.jpg",
+  "content_description": {
+    "short_description": "Pending classification",
+    "ocr_text": "FORTUNE MAGAZINE - March 1944\nFORD'S PRODUCTION GENIUS RESIGNS\n\nCharles Sorensen, 62, who transformed Ford Motor\nCompany's manufacturing operations over four decades,\nhas submitted his resignation effective immediately.\n\nSorensen, born in Odense, Denmark in 1881, joined Ford\nin 1905 and rose to become the chief production engineer\nbehind the assembly line and Willow Run bomber plant.\n\nHenry Ford accepted the resignation on March 4, 1944.\nSources close to Harry Bennett's Service Department\n\nsuggest the departure was long anticipated.\n\nSorensen is expected to join Willys-Overland Motors.",
+    "ocr_result": {
+      "needs_manual_review": false,
+      "ocr_confidence": 0.92,
+      "full_text": "FORTUNE MAGAZINE - March 1944\nFORD'S PRODUCTION GENIUS RESIGNS\n\nCharles Sorensen, 62, who transformed Ford Motor\nCompany's manufacturing operations over four decades,\nhas submitted his resignation effective immediately.\n\nSorensen, born in Odense, Denmark in 1881, joined Ford\nin 1905 and rose to become the chief production engineer\nbehind the assembly line and Willow Run bomber plant.\n\nHenry Ford accepted the resignation on March 4, 1944.\nSources close to Harry Bennett's Service Department\n\nsuggest the departure was long anticipated.\n\nSorensen is expected to join Willys-Overland Motors.",
+      "ocr_date": "2026-06-06T20:54:53Z",
+      "ocr_language": "eng",
+      "extracted_fields": {
+        "detected_document_type": "Newspaper_Article",
+        "detected_places": [
+          "Willow Run",
+          "Denmark"
+        ],
+        "document_type_score": 2,
+        "detected_dates": "March 4, 1944",
+        "detected_organizations": [
+          "Ford Motor",
+          "Willys-Overland",
+          "Service Department",
+          "Ford Motor\nCompany"
+        ],
+        "detected_names": [
+          "Sorensen",
+          "Harry Bennett",
+          "Bennett",
+          "Henry Ford",
+          "Charles Sorensen",
+          "Ford Motor\nCompany",
+          "Willow Run",
+          "Service Department",
+          "Overland Motors"
+        ]
+      },
+      "ocr_engine": "tesseract"
+    },
+    "entities_identified": {
+      "places": [
+        "Denmark",
+        "Willow Run"
+      ],
+      "people": [
+        "Bennett",
+        "Charles Sorensen",
+        "Ford Motor\nCompany",
+        "Harry Bennett",
+        "Henry Ford",
+        "Overland Motors",
+        "Service Department",
+        "Sorensen",
+        "Willow Run"
+      ],
+      "organizations": [
+        "Ford Motor",
+        "Ford Motor\nCompany",
+        "Service Department",
+        "Willys-Overland"
+      ]
+    },
+    "keywords": [
+      "fortune",
+      "article",
+      "1944.jpg"
+    ]
+  },
+  "usage_flags": {
+    "ocr_needs_review": false
+  },
+  "classification": {
+    "type": "Newspaper_Article",
+    "primary_topic": "99-Uncategorized",
+    "documentary_significance": "Low",
+    "historical_date": "March 4, 1944",
+    "historical_date_confidence": "ocr"
+  },
+  "treatment_cross_refs": [
+    {
+      "relevance": "medium",
+      "section": "The Royal Dimension"
+    },
+    {
+      "relevance": "medium",
+      "section": "The Parallel Power Structure"
+    },
+    {
+      "relevance": "medium",
+      "section": "The Engineering Mind"
+    },
+    {
+      "relevance": "high",
+      "section": "The Pivot & Decline"
+    }
+  ],
+  "narrative_cross_refs": [
+    {
+      "relevance": "medium",
+      "section": "Military Service"
+    },
+    {
+      "relevance": "medium",
+      "section": "Vital Records"
+    }
+  ],
+  "domain": "genealogy"
+}

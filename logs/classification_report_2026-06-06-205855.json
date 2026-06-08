@@ -1,0 +1,29 @@
+{
+  "total": 3,
+  "domain": "documentary",
+  "classified": 3,
+  "files": [
+    {
+      "significance": "Low",
+      "type_source": "none",
+      "filename": "birth_certificate_1901.jpg",
+      "type": "Unknown",
+      "topic": "2-CESOR_Charles_Emil_Sorensen"
+    },
+    {
+      "significance": "Low",
+      "type_source": "ocr",
+      "filename": "ford_memo_1943.jpg",
+      "type": "Ford_Memo",
+      "topic": "2-CESOR_Charles_Emil_Sorensen"
+    },
+    {
+      "significance": "Low",
+      "type_source": "ocr",
+      "filename": "fortune_article_1944.jpg",
+      "type": "Newspaper_Article",
+      "topic": "2-CESOR_Charles_Emil_Sorensen"
+    }
+  ],
+  "errors": 0
+}

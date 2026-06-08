@@ -1,0 +1,38 @@
+{
+  "total": 3,
+  "domain": "documentary",
+  "ocr_failed": 0,
+  "files": [
+    {
+      "chars": 419,
+      "dates_found": 1,
+      "names_found": 12,
+      "confidence": 0.88,
+      "doc_type": "Unknown",
+      "needs_review": false,
+      "filename": "birth_certificate_1901.jpg"
+    },
+    {
+      "chars": 584,
+      "dates_found": 1,
+      "names_found": 11,
+      "confidence": 0.93,
+      "doc_type": "Ford_Memo",
+      "needs_review": false,
+      "filename": "ford_memo_1943.jpg"
+    },
+    {
+      "chars": 592,
+      "dates_found": 1,
+      "names_found": 9,
+      "confidence": 0.92,
+      "doc_type": "Newspaper_Article",
+      "needs_review": false,
+      "filename": "fortune_article_1944.jpg"
+    }
+  ],
+  "ocr_success": 3,
+  "needs_review": 0,
+  "engine": "tesseract",
+  "ocr_skipped": 0
+}

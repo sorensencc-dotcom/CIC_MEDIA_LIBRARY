@@ -1,0 +1,38 @@
+{
+  "domain": "genealogy",
+  "needs_review": 0,
+  "engine": "tesseract",
+  "files": [
+    {
+      "doc_type": "Birth_Certificate",
+      "names_found": 11,
+      "dates_found": 1,
+      "filename": "birth_certificate_1901.jpg",
+      "chars": 419,
+      "needs_review": false,
+      "confidence": 0.88
+    },
+    {
+      "doc_type": "Census_Record",
+      "names_found": 9,
+      "dates_found": 1,
+      "filename": "ford_memo_1943.jpg",
+      "chars": 584,
+      "needs_review": false,
+      "confidence": 0.93
+    },
+    {
+      "doc_type": "Military_Record",
+      "names_found": 7,
+      "dates_found": 1,
+      "filename": "fortune_article_1944.jpg",
+      "chars": 592,
+      "needs_review": false,
+      "confidence": 0.92
+    }
+  ],
+  "ocr_skipped": 0,
+  "total": 3,
+  "ocr_success": 3,
+  "ocr_failed": 0
+}

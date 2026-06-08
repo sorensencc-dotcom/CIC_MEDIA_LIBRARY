@@ -220,7 +220,7 @@ function Build-Timeline {
           "employed_by"   { "$fromLabel began employment at $toLabel" }
           "born_in"       { "$fromLabel born — $toLabel" }
           "founded"       { "$fromLabel founded $toLabel" }
-          "parent_of"     { "$fromLabel: birth of $toLabel" }
+          "parent_of"     { "${fromLabel}: birth of $toLabel" }
           "spouse_of"     { "$fromLabel married $toLabel" }
           default         { "$fromLabel — $($edge.relationship) — $toLabel" }
         }

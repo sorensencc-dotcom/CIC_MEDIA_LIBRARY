@@ -1,0 +1,59 @@
+{
+  "batch_details": [
+    {
+      "files_organized": 32,
+      "errors": [],
+      "media_ids_assigned": [
+        null
+      ],
+      "files_classified": 32,
+      "status": "COMPLETE",
+      "files_found": 32,
+      "batch_name": "Batch_Documents",
+      "files_ingested": 32
+    },
+    {
+      "files_organized": 45,
+      "errors": [],
+      "media_ids_assigned": [
+        null
+      ],
+      "files_classified": 45,
+      "status": "COMPLETE",
+      "files_found": 45,
+      "batch_name": "Batch_Helene_Yacht",
+      "files_ingested": 45
+    },
+    {
+      "files_organized": 586,
+      "errors": [],
+      "media_ids_assigned": [
+        null
+      ],
+      "files_classified": 586,
+      "status": "COMPLETE",
+      "files_found": 586,
+      "batch_name": "Batch_Kroll_Willow_Run",
+      "files_ingested": 586
+    },
+    {
+      "files_organized": 0,
+      "errors": [],
+      "media_ids_assigned": [
+        null
+      ],
+      "files_classified": 0,
+      "status": "COMPLETE",
+      "files_found": 0,
+      "batch_name": "Batch_Later_Life",
+      "files_ingested": 0
+    }
+  ],
+  "total_batches": 4,
+  "batches_failed": 0,
+  "total_files": 663,
+  "total_media_ids_assigned": 1,
+  "errors": [],
+  "batches_processed": 4,
+  "timestamp": "2026-06-07T16:00:47Z"
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "genealogy",
+  "total": 3,
+  "classified": 3,
+  "errors": 0,
+  "files": [
+    {
+      "type_source": "filename",
+      "significance": "High",
+      "filename": "birth_certificate_1901.jpg",
+      "type": "Birth_Certificate",
+      "topic": "99-Uncategorized"
+    },
+    {
+      "type_source": "ocr",
+      "significance": "Low",
+      "filename": "ford_memo_1943.jpg",
+      "type": "Ford_Memo",
+      "topic": "99-Uncategorized"
+    },
+    {
+      "type_source": "ocr",
+      "significance": "Low",
+      "filename": "fortune_article_1944.jpg",
+      "type": "Newspaper_Article",
+      "topic": "99-Uncategorized"
+    }
+  ]
+}
