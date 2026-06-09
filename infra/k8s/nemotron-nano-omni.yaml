@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nemotron-nano-omni
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nemotron-nano-omni
+  template:
+    metadata:
+      labels:
+        app: nemotron-nano-omni
+    spec:
+      containers:
+        - name: nemotron-nano-omni
+          image: nvcr.io/nvidia/nemotron/nemotron-3-nano-30b-omni:latest
+          env:
+            - name: NIM_MODEL_NAME
+              value: nemotron-3-nano-30b-omni
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+            requests:
+              nvidia.com/gpu: 1

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cic-orchestrator
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cic-orchestrator
+  template:
+    metadata:
+      labels:
+        app: cic-orchestrator
+    spec:
+      containers:
+        - name: cic-orchestrator
+          image: cic-orchestrator:local
+          envFrom:
+            - secretRef:
+                name: cic-env

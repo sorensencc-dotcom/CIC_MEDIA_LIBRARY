@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nemotron-parse
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nemotron-parse
+  template:
+    metadata:
+      labels:
+        app: nemotron-parse
+    spec:
+      containers:
+        - name: nemotron-parse
+          image: nvcr.io/nvidia/nim/nemotron-parse:latest
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+            requests:
+              nvidia.com/gpu: 1

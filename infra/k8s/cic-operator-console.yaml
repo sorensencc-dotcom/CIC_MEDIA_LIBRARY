@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cic-operator-console
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cic-operator-console
+  template:
+    metadata:
+      labels:
+        app: cic-operator-console
+    spec:
+      containers:
+        - name: cic-operator-console
+          image: cic-operator-console:local
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cic-operator-console
+  namespace: ai-stack
+spec:
+  selector:
+    app: cic-operator-console
+  ports:
+    - port: 3000
+      targetPort: 3000
+  type: LoadBalancer

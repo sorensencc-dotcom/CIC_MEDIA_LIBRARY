@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cic-audit
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cic-audit
+  template:
+    metadata:
+      labels:
+        app: cic-audit
+    spec:
+      containers:
+        - name: cic-audit
+          image: cic-audit:local
+          envFrom:
+            - secretRef:
+                name: cic-env

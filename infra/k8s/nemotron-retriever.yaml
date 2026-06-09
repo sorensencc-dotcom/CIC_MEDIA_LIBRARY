@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nemotron-retriever
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nemotron-retriever
+  template:
+    metadata:
+      labels:
+        app: nemotron-retriever
+    spec:
+      containers:
+        - name: nemotron-retriever
+          image: nvcr.io/nvidia/nim/nemotron-retriever:latest
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+            requests:
+              nvidia.com/gpu: 1

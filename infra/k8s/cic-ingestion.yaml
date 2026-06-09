@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cic-ingestion
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cic-ingestion
+  template:
+    metadata:
+      labels:
+        app: cic-ingestion
+    spec:
+      containers:
+        - name: cic-ingestion
+          image: cic-ingestion:local
+          envFrom:
+            - secretRef:
+                name: cic-env

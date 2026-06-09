@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  cic-orchestrator:
+    image: cic-orchestrator:local
+    restart: unless-stopped
+    environment:
+      NIM_BASE_URL: https://integrate.api.nvidia.com/v1
+      NIM_API_KEY: ${NVIDIA_API_KEY}
+      NIM_MODEL_TEXT: nvidia/nvidia-nemotron-nano-9b-v2
+      NIM_MODEL_OMNI: nvidia/nvidia-nemotron-nano-9b-v2
+      NIM_MODEL_EMBED: nvidia/nvidia-embed-qa-4
+      NIM_MODEL_RERANK: nvidia/nvidia-reranker-qa-mistral-4b-v3
+      NIM_MODEL_PARSE: nvidia/nvidia-nemotron-nano-9b-v2
+    networks: [ai-net]
+
+  cic-ingestion:
+    image: cic-ingestion:local
+    restart: unless-stopped
+    environment:
+      NIM_BASE_URL: https://integrate.api.nvidia.com/v1
+      NIM_API_KEY: ${NVIDIA_API_KEY}
+      NIM_MODEL_PARSE: nvidia/nvidia-nemotron-nano-9b-v2
+      NIM_MODEL_EMBED: nvidia/nvidia-embed-qa-4
+    networks: [ai-net]
+
+  cic-audit:
+    image: cic-audit:local
+    restart: unless-stopped
+    environment:
+      NIM_BASE_URL: https://integrate.api.nvidia.com/v1
+      NIM_API_KEY: ${NVIDIA_API_KEY}
+      NIM_MODEL_TEXT: nvidia/nvidia-nemotron-nano-9b-v2
+    networks: [ai-net]
+
+  cic-operator-console:
+    image: cic-operator-console:local
+    restart: unless-stopped
+    ports:
+      - "3100:5173"
+    networks: [ai-net]
+
+networks:
+  ai-net:
+    driver: bridge

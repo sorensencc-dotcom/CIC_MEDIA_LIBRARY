@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nemotron-nano-text
+  namespace: ai-stack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nemotron-nano-text
+  template:
+    metadata:
+      labels:
+        app: nemotron-nano-text
+    spec:
+      containers:
+        - name: nemotron-nano-text
+          image: nvcr.io/nvidia/nemotron/nemotron-3-nano-30b-a3b:latest
+          env:
+            - name: NIM_MODEL_NAME
+              value: nemotron-3-nano-30b-a3b
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+            requests:
+              nvidia.com/gpu: 1
