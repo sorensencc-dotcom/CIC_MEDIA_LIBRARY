@@ -1,0 +1,24 @@
+.wayland/skills/improvement-analysis.md
+  s_eac86b6331738d::t_8c6aa6e9acccd5 1-121
+WAYLAND.md
+  s_eac86b6331738d::t_1590669892cbcb 8
+  s_eac86b6331738d::t_0280ca11c5a0a1 1-7,9-32
+.wayland/config.toml
+  s_eac86b6331738d::t_31687f26843643 5-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4dd25a4e5177aa35e0c0f8aecf7fb3d164d86e04",
+  "prompts": {},
+  "sessions": {
+    "s_eac86b6331738d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "eb25d5fc-25fa-40e8-8874-f1be0841a1f8",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
