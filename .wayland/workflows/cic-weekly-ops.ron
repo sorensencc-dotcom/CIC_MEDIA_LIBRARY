@@ -1,0 +1,19 @@
+(
+    name: "cic-weekly-ops",
+    description: "Weekly ops follow-up + curation + report + notify",
+    schedule: "0 9 * * 1",
+    stages: [
+        (
+            name: "follow-ops",
+            kind: "shell",
+            command: "pwsh",
+            args: ["scripts/cic-follow-ops.ps1"],
+        ),
+        (
+            name: "curate",
+            kind: "shell",
+            command: "pwsh",
+            args: ["scripts/curate-cic-marketing-assets.ps1"],
+        ),
+    ],
+)

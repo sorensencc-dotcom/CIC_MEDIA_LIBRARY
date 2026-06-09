@@ -1,0 +1,37 @@
+(
+    provider: (
+        name: "anthropic",
+        model_default: "claude-3-5-haiku-20241022",
+        model_planning: "claude-3-opus-20240229",
+    ),
+    metrics: (
+        enabled: true,
+        port: 9091,
+    ),
+    channels: [
+        (
+            name: "slack-main",
+            kind: "slack_webhook",
+            webhook_url: "https://hooks.slack.com/services/XXX/YYY/ZZZ",
+            default_channel: "#cic-pipeline",
+        ),
+    ],
+    mcp_servers: [
+        (
+            name: "cic-mcp",
+            command: "node",
+            args: ["scripts/cic-mcp-server.js"],
+        ),
+    ],
+    teams: [
+        (
+            name: "CIC",
+            assistants: [
+                "CIC-Ingest",
+                "CIC-Research",
+                "CIC-Report",
+                "CIC-Monitor",
+            ],
+        ),
+    ],
+)

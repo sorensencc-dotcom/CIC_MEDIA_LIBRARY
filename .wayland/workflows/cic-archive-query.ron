@@ -1,0 +1,19 @@
+(
+    name: "cic-archive-query",
+    description: "Archive query + reconciliation + notify",
+    schedule: "0 4 * * 1",
+    stages: [
+        (
+            name: "query-archives",
+            kind: "shell",
+            command: "pwsh",
+            args: ["scripts/query-archives.ps1"],
+        ),
+        (
+            name: "reconcile",
+            kind: "shell",
+            command: "pwsh",
+            args: ["scripts/reconciliation-loop.ps1"],
+        ),
+    ],
+)

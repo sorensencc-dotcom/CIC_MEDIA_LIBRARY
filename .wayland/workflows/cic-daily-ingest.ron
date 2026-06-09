@@ -1,0 +1,19 @@
+(
+    name: "cic-daily-ingest",
+    description: "Daily CIC media ingest + classify + organize + notify",
+    schedule: "0 3 * * *",
+    stages: [
+        (
+            name: "bulk-ingest-batches",
+            kind: "shell",
+            command: "pwsh",
+            args: ["scripts/bulk-ingest-batches.ps1"],
+        ),
+        (
+            name: "classify",
+            kind: "shell",
+            command: "pwsh",
+            args: ["scripts/classify-cic-media.ps1"],
+        ),
+    ],
+)

@@ -1,0 +1,13 @@
+(
+    name: "cic-improvement-analysis",
+    description: "Run improvement-analysis skill and notify",
+    schedule: "0 10 1 * *",
+    stages: [
+        (
+            name: "analyze",
+            kind: "skill",
+            skill: "improvement-analysis",
+            args: { days: 30 },
+        ),
+    ],
+)
