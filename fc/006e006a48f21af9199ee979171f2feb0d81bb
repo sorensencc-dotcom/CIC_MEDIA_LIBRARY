@@ -1,0 +1,50 @@
+README.md
+  s_14faad8c1bd803::t_d6e7081311fa01 1-38
+infra/k8s/nemotron-nano-omni.yaml
+  s_14faad8c1bd803::t_a40fe4237c6fb7 1-26
+infra/docker/docker-compose.cic.yml
+  s_14faad8c1bd803::t_4f3508974914ab 40
+  s_14faad8c1bd803::t_44edc4faeb670c 1-7,15-20,25-30,34-39,41-45
+  s_14faad8c1bd803::t_5edc19e3998b6e 8-14,21-24,31-33
+infra/k8s/nim-gateway.yaml
+  s_14faad8c1bd803::t_27a25cb4e8f254 1-34
+infra/k8s/cic-operator-console.yaml
+  s_14faad8c1bd803::t_bd4704d4b831af 1-33
+src/clients/nimClient.ts
+  s_14faad8c1bd803::t_3de745463413c9 1-45
+infra/k8s/cic-orchestrator.yaml
+  s_14faad8c1bd803::t_7057eb04f1d3a5 1-21
+infra/k8s/nemotron-retriever.yaml
+  s_14faad8c1bd803::t_29c71ec9b36397 1-23
+infra/docker/.env
+  s_14faad8c1bd803::t_45edd623d978e9 1-8
+infra/k8s/nemotron-nano-text.yaml
+  s_14faad8c1bd803::t_9219451dd5710e 1-26
+src/clients/cicNimClient.ts
+  s_14faad8c1bd803::t_3880de137e6c41 1-34
+infra/k8s/nemotron-parse.yaml
+  s_14faad8c1bd803::t_0a5bee94f76924 1-23
+infra/k8s/cic-audit.yaml
+  s_14faad8c1bd803::t_e32f9c2d9ac9d0 1-21
+infra/docker/.env.example
+  s_14faad8c1bd803::t_e4ae5329ed6ab3 1,3,6,12-25
+  s_14faad8c1bd803::t_7f52a5d3f5029d 2,4-5,7-11
+infra/k8s/cic-ingestion.yaml
+  s_14faad8c1bd803::t_646d1b65a9dd0a 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "fc006e006a48f21af9199ee979171f2feb0d81bb",
+  "prompts": {},
+  "sessions": {
+    "s_14faad8c1bd803": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b0f0ef3-8d9c-47fe-9477-cd38ebc8f590",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
