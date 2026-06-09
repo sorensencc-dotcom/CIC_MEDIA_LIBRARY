@@ -1,0 +1,46 @@
+scripts/validate-workflows.js
+  s_23364b39b23e42::t_dcad29fb2042db 1-44,48-52,54-55,57-58,60-80
+  s_23364b39b23e42::t_275c309d761620 59
+  s_23364b39b23e42::t_792153b84eec7a 45-47
+  s_23364b39b23e42::t_e3f17bc663b24e 53,56
+.wayland/workflows/cic-improvement-analysis.ron
+  s_23364b39b23e42::t_769657f74faf44 5-6,13-29
+.wayland/workflows/cic-weekly-ops.ron
+  s_23364b39b23e42::t_566bc0bb7bff37 5-6,13-15,22-38
+.wayland/workflows/cic-archive-query.ron
+  s_23364b39b23e42::t_4dbcaa2e06cf9d 5-6,13-15,22-38
+.wayland/workflows/cic-daily-ingest.ron
+  s_23364b39b23e42::t_44a4dcbb4d63a7 5-6,13-15,22-38
+.env.example
+  s_23364b39b23e42::t_3ac97115b31c07 1-16
+scripts/improvement-analysis.js
+  s_eac86b6331738d::t_e1ff7776a9b68f 1-310
+scripts/cic-mcp-server.js
+  s_23364b39b23e42::t_db3a570c629d3c 5-15,20,25,30,35,40-41,43,45,47,54,56,58,60-61,63-65,67,69-70,77-83,86-93
+.wayland/config.ron
+  s_23364b39b23e42::t_2bcad7adf66ec6 15,18-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "57a638833884b80dfea5a82b348d75711c8212b8",
+  "prompts": {},
+  "sessions": {
+    "s_23364b39b23e42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "634d2733-de5b-486e-a577-4a51780bbf56",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    },
+    "s_eac86b6331738d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "eb25d5fc-25fa-40e8-8874-f1be0841a1f8",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
