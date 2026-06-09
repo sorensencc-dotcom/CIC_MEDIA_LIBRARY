@@ -2,18 +2,40 @@
     name: "cic-daily-ingest",
     description: "Daily CIC media ingest + classify + organize + notify",
     schedule: "0 3 * * *",
+    timeout_minutes: 120,
+    on_failure: "alert_and_continue",  // Alert but don't block subsequent workflows
     stages: [
         (
             name: "bulk-ingest-batches",
             kind: "shell",
             command: "pwsh",
             args: ["scripts/bulk-ingest-batches.ps1"],
+            retry_count: 2,
+            timeout_minutes: 60,
+            on_failure: "alert",  // Alert if stage fails
         ),
         (
             name: "classify",
             kind: "shell",
             command: "pwsh",
             args: ["scripts/classify-cic-media.ps1"],
+            retry_count: 1,
+            timeout_minutes: 45,
+            on_failure: "alert",
+        ),
+        (
+            name: "notify-success",
+            kind: "channel",
+            channel: "slack-main",
+            template: "CIC daily ingest complete: {{ingest_report.total_items}} items, {{ingest_report.new_entities}} new entities.",
+            condition: "all_stages_success",
+        ),
+        (
+            name: "notify-failure",
+            kind: "channel",
+            channel: "slack-alerts",
+            template: "CIC daily ingest FAILED at stage: {{failed_stage}}. Error: {{error_message}}. Check logs: https://cic-logs/daily-ingest/{{timestamp}}",
+            condition: "any_stage_failure",
         ),
     ],
 )

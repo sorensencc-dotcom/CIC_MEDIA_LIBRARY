@@ -12,8 +12,14 @@
         (
             name: "slack-main",
             kind: "slack_webhook",
-            webhook_url: "https://hooks.slack.com/services/XXX/YYY/ZZZ",
+            webhook_url: "$SLACK_WEBHOOK_MAIN",  // Set via env var (secrets manager in production)
             default_channel: "#cic-pipeline",
+        ),
+        (
+            name: "slack-alerts",
+            kind: "slack_webhook",
+            webhook_url: "$SLACK_WEBHOOK_ALERTS",  // Set via env var (secrets manager in production)
+            default_channel: "#cic-alerts",
         ),
     ],
     mcp_servers: [

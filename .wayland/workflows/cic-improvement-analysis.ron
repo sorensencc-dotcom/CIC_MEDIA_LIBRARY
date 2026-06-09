@@ -2,12 +2,31 @@
     name: "cic-improvement-analysis",
     description: "Run improvement-analysis skill and notify",
     schedule: "0 10 1 * *",
+    timeout_minutes: 60,
+    on_failure: "alert_and_continue",
     stages: [
         (
             name: "analyze",
             kind: "skill",
             skill: "improvement-analysis",
             args: { days: 30 },
+            retry_count: 1,
+            timeout_minutes: 45,
+            on_failure: "alert",
+        ),
+        (
+            name: "notify-success",
+            kind: "channel",
+            channel: "slack-main",
+            template: "CIC monthly improvement analysis complete. Top recommendations: {{analysis.top_3}}.",
+            condition: "all_stages_success",
+        ),
+        (
+            name: "notify-failure",
+            kind: "channel",
+            channel: "slack-alerts",
+            template: "CIC improvement analysis FAILED. Error: {{error_message}}.",
+            condition: "any_stage_failure",
         ),
     ],
 )
