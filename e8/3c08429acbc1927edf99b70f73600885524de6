@@ -1,0 +1,24 @@
+W4-W7-STATUS.md
+  s_eac86b6331738d::t_f06342e9ce4b27 125-129,131-136,165-168
+  s_eac86b6331738d::t_22561fc66173e0 164
+  s_eac86b6331738d::t_cf805a2d6067c1 201-206
+  s_eac86b6331738d::t_5bf67a4e07c3a7 130
+  s_eac86b6331738d::t_b5c376545c69f1 210-234
+  s_eac86b6331738d::t_23e81ab21a5505 3-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e83c08429acbc1927edf99b70f73600885524de6",
+  "prompts": {},
+  "sessions": {
+    "s_eac86b6331738d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "eb25d5fc-25fa-40e8-8874-f1be0841a1f8",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
