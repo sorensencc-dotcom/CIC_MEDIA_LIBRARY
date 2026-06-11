@@ -8,49 +8,153 @@ const WORKFLOW_DIR = path.join(__dirname, "..", ".wayland", "workflows");
 const SCRIPTS_DIR = path.join(__dirname);
 
 // WIL-008 fix: Simple RON syntax validation instead of brittle regex
+// V1.1: track line/column numbers + support comments
 function validateRonSyntax(filePath) {
   const content = fs.readFileSync(filePath, "utf8");
   let parenCount = 0;
   let bracketCount = 0;
   let inString = false;
   let escapeNext = false;
+  let inLineComment = false;
+  let inBlockComment = false;
+  let line = 1;
+  let column = 1;
+  let errorLine = null;
+  let errorColumn = null;
 
   for (let i = 0; i < content.length; i++) {
     const char = content[i];
+    const nextChar = i + 1 < content.length ? content[i + 1] : "";
+
+    // Handle line comments (// ...)
+    if (!inString && !inBlockComment && char === "/" && nextChar === "/") {
+      inLineComment = true;
+      column += 2;
+      i++; // skip next /
+      continue;
+    }
+
+    // Handle block comments (/* ... */)
+    if (!inString && !inLineComment && char === "/" && nextChar === "*") {
+      inBlockComment = true;
+      column += 2;
+      i++; // skip next *
+      continue;
+    }
+
+    if (inBlockComment && char === "*" && nextChar === "/") {
+      inBlockComment = false;
+      column += 2;
+      i++; // skip next /
+      continue;
+    }
+
+    if (inLineComment) {
+      if (char === "\n") {
+        inLineComment = false;
+        line++;
+        column = 1;
+      } else {
+        column++;
+      }
+      continue;
+    }
+
+    if (inBlockComment) {
+      if (char === "\n") {
+        line++;
+        column = 1;
+      } else {
+        column++;
+      }
+      continue;
+    }
 
     if (escapeNext) {
       escapeNext = false;
+      if (char === "\n") {
+        line++;
+        column = 1;
+      } else {
+        column++;
+      }
       continue;
     }
 
     if (char === "\\") {
       escapeNext = true;
+      column++;
       continue;
     }
 
     if (char === '"') {
       inString = !inString;
+      column++;
       continue;
     }
 
-    if (inString) continue;
+    if (inString) {
+      if (char === "\n") {
+        line++;
+        column = 1;
+      } else {
+        column++;
+      }
+      continue;
+    }
 
-    if (char === "(") parenCount++;
-    if (char === ")") parenCount--;
-    if (char === "[") bracketCount++;
-    if (char === "]") bracketCount--;
+    if (char === "(") {
+      parenCount++;
+    } else if (char === ")") {
+      parenCount--;
+      if (parenCount < 0 && !errorLine) {
+        errorLine = line;
+        errorColumn = column;
+      }
+    } else if (char === "[") {
+      bracketCount++;
+    } else if (char === "]") {
+      bracketCount--;
+      if (bracketCount < 0 && !errorLine) {
+        errorLine = line;
+        errorColumn = column;
+      }
+    }
+
+    if (char === "\n") {
+      line++;
+      column = 1;
+    } else {
+      column++;
+    }
 
     if (parenCount < 0 || bracketCount < 0) {
-      return { valid: false, error: "Unmatched closing bracket" };
+      return {
+        valid: false,
+        error: `Unmatched closing bracket at line ${errorLine}, column ${errorColumn}`
+      };
     }
   }
 
+  if (inLineComment || inBlockComment) {
+    return {
+      valid: false,
+      error: `Unclosed comment at line ${line}`
+    };
+  }
+
   if (parenCount !== 0) {
-    return { valid: false, error: `Unmatched parentheses (${parenCount > 0 ? "missing" : "extra"} closing parens)` };
+    return {
+      valid: false,
+      error: `Unmatched parentheses (${parenCount > 0 ? "missing" : "extra"} closing parens)`
+    };
   }
 
   if (bracketCount !== 0) {
-    return { valid: false, error: `Unmatched brackets (${bracketCount > 0 ? "missing" : "extra"} closing brackets)` };
+    return {
+      valid: false,
+      error: `Unmatched brackets (${bracketCount > 0 ? "missing" : "extra"} closing brackets)`
+    };
   }
 
   return { valid: true };

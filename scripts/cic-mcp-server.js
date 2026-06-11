@@ -4,13 +4,14 @@ const http = require("http");
 const { validateEnv } = require("./validate-startup");
 
 // Rate limiting (WIL-005 fix)
-const rateLimitStore = new Map(); // IP -> {count, resetTime}
+const rateLimitStore = new Map(); // IP -> {count, resetTime, lastSeen}
 const RATE_LIMIT_WINDOW_MS = 60000; // 1 minute
 const RATE_LIMIT_MAX_REQUESTS = 100; // per minute
+const RATE_LIMIT_MAX_IPS = 10000; // V1.1: prevent unbounded memory growth
 
 function checkRateLimit(ip) {
   const now = Date.now();
-  const entry = rateLimitStore.get(ip) || { count: 0, resetTime: now + RATE_LIMIT_WINDOW_MS };
+  const entry = rateLimitStore.get(ip) || { count: 0, resetTime: now + RATE_LIMIT_WINDOW_MS, lastSeen: now };
 
   if (now >= entry.resetTime) {
     // Window expired, reset
@@ -20,7 +21,24 @@ function checkRateLimit(ip) {
     entry.count++;
   }
 
+  entry.lastSeen = now;
   rateLimitStore.set(ip, entry);
+
+  // V1.1: evict LRU IP if map exceeds max size
+  if (rateLimitStore.size > RATE_LIMIT_MAX_IPS) {
+    let lruIp = null;
+    let lruTime = now;
+    for (const [candidate, data] of rateLimitStore.entries()) {
+      if (data.lastSeen < lruTime) {
+        lruTime = data.lastSeen;
+        lruIp = candidate;
+      }
+    }
+    if (lruIp) {
+      rateLimitStore.delete(lruIp);
+      log("info", "rate_limit_lru_eviction", { evicted_ip: lruIp, store_size: rateLimitStore.size });
+    }
+  }
 
   if (entry.count > RATE_LIMIT_MAX_REQUESTS) {
     return { allowed: false, remaining: 0, resetIn: entry.resetTime - now };
@@ -34,9 +52,42 @@ const INVENTORY = path.join(ROOT, "metadata", "master_media_inventory.csv");
 const ENTITY_GRAPH = path.join(ROOT, "metadata", "entity_graph.json");
 const ARCHIVE_DIR = path.join(ROOT, "metadata");
 const REPORTS_DIR = path.join(ROOT, "reports");
+const FALLBACK_ALERTS_DIR = path.join(ROOT, "metadata", "fallback_alerts");
+
+// V1.1: Ensure fallback alerts directory exists (WIL-012)
+if (!fs.existsSync(FALLBACK_ALERTS_DIR)) {
+  try {
+    fs.mkdirSync(FALLBACK_ALERTS_DIR, { recursive: true });
+  } catch (e) {
+    log("warn", "fallback_alerts_dir_creation_failed", { error: e.message });
+  }
+}
 
 // Structured logging (production-safe: no stack traces in logs)
 const isDev = process.env.NODE_ENV === "development";
+
+// V1.1: Sanitize error messages (scrub paths, IPs for privacy)
+function sanitizeError(msg) {
+  if (typeof msg !== "string") return msg;
+  return msg
+    .replace(/[A-Za-z]:[\\\/][\w\-\.\/\\]+/g, "[PATH]") // Windows/Unix paths
+    .replace(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/g, "[IP]") // IPv4 addresses
+    .replace(/([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,})/g, "[EMAIL]"); // Email addresses
+}
+
+// V1.1: Fallback alert storage (WIL-012) - write to file if Slack unavailable
+function writeAlertFallback(alertData) {
+  try {
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const fileName = `alert_${timestamp}.json`;
+    const filePath = path.join(FALLBACK_ALERTS_DIR, fileName);
+    fs.writeFileSync(filePath, JSON.stringify(alertData, null, 2));
+    log("info", "alert_fallback_written", { file: fileName });
+  } catch (e) {
+    log("error", "alert_fallback_write_failed", { error: e.message });
+  }
+}
+
 const log = (level, msg, data = {}) => {
   const timestamp = new Date().toISOString();
   const logEntry = {
@@ -49,6 +100,10 @@ const log = (level, msg, data = {}) => {
   // Scrub stack traces in production (WIL-001 fix)
   if (!isDev && logEntry.stack) {
     delete logEntry.stack;
+  }
+  // V1.1: Sanitize error messages in production
+  if (!isDev && logEntry.error) {
+    logEntry.error = sanitizeError(logEntry.error);
   }
   console.log(JSON.stringify(logEntry));
 };
@@ -353,17 +408,20 @@ const server = http.createServer((req, res) => {
   });
 });
 
-// Validate startup before listening (WIL-004 fix)
-const validatedEnv = validateEnv();
-
-const PORT = parseInt(validatedEnv.MCP_PORT, 10);
-server.listen(PORT, () => {
-  log("info", "mcp_server_started", {
-    port: PORT,
-    tools: Object.keys(tools),
-    cic_root: ROOT,
-    env: validatedEnv.NODE_ENV,
+// Validate startup before listening (WIL-004 fix, V1.1: async reachability check)
+validateEnv().then(validatedEnv => {
+  const PORT = parseInt(validatedEnv.MCP_PORT, 10);
+  server.listen(PORT, () => {
+    log("info", "mcp_server_started", {
+      port: PORT,
+      tools: Object.keys(tools),
+      cic_root: ROOT,
+      env: validatedEnv.NODE_ENV,
+    });
   });
+}).catch(err => {
+  log("error", "startup_validation_failed", { error: err.message });
+  process.exit(1);
 });
 
 // Graceful shutdown on signal
