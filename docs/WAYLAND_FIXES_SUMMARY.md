@@ -1,7 +1,8 @@
 # Wayland W1-W3 Medium Issues Fixed
 
 **Status:** ✅ ALL 4 MEDIUM ISSUES RESOLVED (2026-06-10)
-**Commits:** adb3037, 4b18962
+**V1.1 Hardening:** ✅ 7 ITEMS COMPLETE (2026-06-10)
+**Commits:** adb3037, 4b18962, c7465d6, 7781e79, 3caae10
 **Ready for:** Production Release (2026-06-22)
 
 ---
