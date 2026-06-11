@@ -238,15 +238,23 @@ Currently: improvements stay local. Upstream creators miss value. Community does
 - `pull_requests:write` — create PRs
 - `issues:write` — add PR comments
 
-**Security:** Never commit `.env`. Add to `.gitignore`. Warn if token exposed in logs.
+**Token Loading & Validation:**
+- Load at startup: `const token = process.env.GITHUB_TOKEN`
+- Validate format: must start with `ghp_` (GitHub Personal Access Token)
+- If missing/invalid: log error, halt startup with message "GITHUB_TOKEN not set or invalid"
+- Startup check: make HEAD request to `https://api.github.com/user` with token
+- If auth fails: abort with "GitHub token invalid or expired"
+
+**Security:** Never commit `.env`. Add to `.gitignore`. Warn if token exposed in logs (sanitize in error messages).
 
 ### 7. Error Handling & Resilience
 
 **Network & API Errors:**
-- Repo unavailable (404, timeout) → log warning, skip skill, continue
-- GitHub API rate limit (429) → backoff 60s, retry up to 3x
-- Auth failure (401) → halt all submissions, alert operator
-- Invalid manifest.json → fail startup with clear error
+- Repo unavailable (404, timeout) → log warning, skip skill, mark in manifest as `"available": false`, notify operator once
+- GitHub API rate limit (429) → exponential backoff: 1s → 2s → 4s (capped at 60s), retry up to 3x, then escalate
+- Auth failure (401) → halt all submissions, post alert to Slack channel `#skill-contrib-alerts`, log to `~/.claude/skills/contributions/auth-failure.log`
+- Invalid manifest.json → fail startup with schema validation error and line number
+- Network timeout (>10s) → treat as 503, backoff, retry
 
 **Diff Processing:**
 - Diff >1000 LOC → warn but proceed (assume intentional large improvement)
@@ -254,14 +262,16 @@ Currently: improvements stay local. Upstream creators miss value. Community does
 - Untracked files (not in upstream repo) → exclude from diff
 
 **PR Creation Failures:**
-- Branch already exists → use sequential suffix (`contrib/skill-{name}-2`)
-- PR already exists for same skill → comment on existing PR instead of creating new one
-- GitHub returns 422 (validation failed) → log full response, escalate to operator
+- Branch already exists → check if it has open PR; if yes, comment on existing PR; if not, use sequential suffix (`contrib/skill-{name}-2`)
+- PR already exists for same skill → comment on existing PR with new changes instead of creating duplicate
+- GitHub returns 422 (validation failed) → log full response, escalate to operator with `POST /slack` to `#skill-contrib-alerts`
+- Branch cleanup: auto-delete contrib branches >60 days old with no associated PR (prevents accumulation)
 
 **Polling & Stale Detection:**
-- GitHub API unreachable during daily check → skip, retry next cycle
-- PR >30 days with no activity → send escalation notification ("Follow up or close?")
-- PR closed without merging → log closure reason from PR comments
+- GitHub API unreachable during daily check → skip, retry next cycle, max 3 consecutive skips before alert
+- PR >30 days with no activity → send Slack escalation ("Follow up or close?"), link to PR, suggest review interval
+- PR closed without merging → log closure reason from PR comments, tag as `"status": "closed"` in contributions metadata
+- Merge success → log to `~/.claude/skills/contributions/merged.log`, send Slack celebration, mark skill as `"lastMergedAt": "2026-06-XX"`
 
 ---
 
