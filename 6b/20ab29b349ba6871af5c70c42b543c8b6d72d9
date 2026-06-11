@@ -1,0 +1,20 @@
+README.md
+  s_14faad8c1bd803::t_f7140d239c0a3f 26-38
+  s_14faad8c1bd803::t_56729c91b80272 15-16,20-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "6b20ab29b349ba6871af5c70c42b543c8b6d72d9",
+  "prompts": {},
+  "sessions": {
+    "s_14faad8c1bd803": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b0f0ef3-8d9c-47fe-9477-cd38ebc8f590",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
