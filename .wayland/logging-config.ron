@@ -1,0 +1,19 @@
+// Logging Configuration
+// Replaces hardcoded log URLs with configurable endpoint (WIL-007 fix)
+
+(
+    logging: (
+        base_url: "$CIC_LOGS_BASE_URL",  // Set via env var, e.g., https://cic-logs or https://logs.internal
+        retention_days: 30,
+        archive_format: "gzip",
+    ),
+    
+    // Slack notification templates with dynamic log URLs
+    slack_templates: (
+        failure_alert: "Workflow {{workflow_name}} FAILED at stage: {{failed_stage}}. Error: {{error_message}}. Logs: {{base_url}}/{{workflow_name}}/{{timestamp}}",
+        
+        timeout_alert: "Workflow {{workflow_name}} TIMEOUT after {{timeout_minutes}}min. Logs: {{base_url}}/{{workflow_name}}/{{timestamp}}",
+        
+        retry_alert: "Workflow {{workflow_name}} retrying stage {{stage_name}} (attempt {{attempt}}/{{max_attempts}}). Logs: {{base_url}}/{{workflow_name}}/{{timestamp}}",
+    ),
+)

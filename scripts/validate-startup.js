@@ -16,6 +16,9 @@ const OPTIONAL_VARS = {
   MCP_PORT: { default: "7010", description: "MCP server port" },
   NODE_ENV: { default: "production", description: "Node environment" },
   CIC_ROOT: { default: "auto-detect", description: "CIC root directory" },
+  CIC_LOGS_BASE_URL: { default: "https://cic-logs", description: "Base URL for workflow logs" },
+  RETRY_BACKOFF_MULTIPLIER: { default: "2", description: "Retry backoff multiplier" },
+  RETRY_INITIAL_DELAY_MS: { default: "1000", description: "Initial retry delay (ms)" },
 };
 
 function validateEnv() {

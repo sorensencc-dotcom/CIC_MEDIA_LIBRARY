@@ -1,0 +1,23 @@
+// Exponential Backoff Configuration
+// Prevents retry storms on transient failures (WIL-006 fix)
+
+(
+    retry_policy: (
+        initial_delay_ms: 1000,        // 1 second
+        multiplier: 2.0,               // Double delay each retry
+        max_delay_ms: 30000,           // Cap at 30 seconds
+        jitter_percent: 10,            // Add 10% random jitter
+    ),
+    
+    // Example retry sequence: 1s → 2s → 4s → 8s → 16s → 30s (capped)
+    // With jitter: actual delays vary slightly to prevent thundering herd
+    
+    example_sequence: [
+        "Attempt 1: fail → wait 1000ms",
+        "Attempt 2: fail → wait 2000ms (±10%)",
+        "Attempt 3: fail → wait 4000ms (±10%)",
+        "Attempt 4: fail → wait 8000ms (±10%)",
+        "Attempt 5: fail → wait 16000ms (±10%)",
+        "Attempt 6: fail → wait 30000ms (capped)",
+    ],
+)
