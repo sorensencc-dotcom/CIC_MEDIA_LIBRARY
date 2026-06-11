@@ -12,17 +12,30 @@ CIC is a multi-agent system for continuous analysis, governance, and evolution o
 ## Running with Docker
 ```bash
 cd infra/docker
+cp .env.example .env
+# Edit .env with your NVIDIA_API_KEY
 docker compose -f docker-compose.cic.yml up -d
 ```
 
-## NIM Integration
-CIC uses Nemotron + NIM via:
-- `POST /v1/chat/completions` (text + multimodal)
-- `POST /v1/embeddings`
-- `POST /v1/rerank`
-- `POST /v1/parse`
+**Services:**
+- Orchestrator (7001) — reasoning + planning
+- Ingestion (7002) — document parsing + embeddings
+- Audit (7003) — policy validation
+- Operator Console (3100) — web UI
 
-Models are configured via `.env` and injected into CIC services.
+## NIM Integration (Phase 0.7)
+CIC uses NVIDIA Nemotron models via cloud API:
+- **Base URL:** https://integrate.api.nvidia.com/v1
+- **Auth:** Bearer token (NVIDIA_API_KEY env var)
+- **Routes:** `/v1/chat/completions`, `/v1/embeddings`, `/v1/rerank`, `/v1/parse`
+
+Models configured via `.env`:
+- Text: `nvidia/nvidia-nemotron-nano-9b-v2`
+- Multimodal: `nvidia/nvidia-nemotron-nano-9b-v2`
+- Embeddings: `nvidia/nvidia-embed-qa-4`
+- Reranker: `nvidia/nvidia-reranker-qa-mistral-4b-v3`
+
+**Status:** ✅ Production-ready. All services running and tested.
 
 ## K8s Deployment
 ```bash
