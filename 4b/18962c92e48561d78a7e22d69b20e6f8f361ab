@@ -1,0 +1,22 @@
+scripts/cic-mcp-server.js
+  s_23364b39b23e42::t_19e8f746a6f0d5 6-31
+  s_23364b39b23e42::t_6266a05721083b 280-291,294
+scripts/validate-workflows.js
+  s_23364b39b23e42::t_5d3195ea9e3f93 2,10-59,64-80,89-90,93-106,109-111,118,135-137,140,142,146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4b18962c92e48561d78a7e22d69b20e6f8f361ab",
+  "prompts": {},
+  "sessions": {
+    "s_23364b39b23e42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "634d2733-de5b-486e-a577-4a51780bbf56",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
