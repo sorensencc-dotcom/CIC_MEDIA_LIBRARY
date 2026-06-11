@@ -3,6 +3,32 @@ const path = require("path");
 const http = require("http");
 const { validateEnv } = require("./validate-startup");
 
+// Rate limiting (WIL-005 fix)
+const rateLimitStore = new Map(); // IP -> {count, resetTime}
+const RATE_LIMIT_WINDOW_MS = 60000; // 1 minute
+const RATE_LIMIT_MAX_REQUESTS = 100; // per minute
+
+function checkRateLimit(ip) {
+  const now = Date.now();
+  const entry = rateLimitStore.get(ip) || { count: 0, resetTime: now + RATE_LIMIT_WINDOW_MS };
+
+  if (now >= entry.resetTime) {
+    // Window expired, reset
+    entry.count = 1;
+    entry.resetTime = now + RATE_LIMIT_WINDOW_MS;
+  } else {
+    entry.count++;
+  }
+
+  rateLimitStore.set(ip, entry);
+
+  if (entry.count > RATE_LIMIT_MAX_REQUESTS) {
+    return { allowed: false, remaining: 0, resetIn: entry.resetTime - now };
+  }
+
+  return { allowed: true, remaining: RATE_LIMIT_MAX_REQUESTS - entry.count, resetIn: entry.resetTime - now };
+}
+
 const ROOT = process.env.CIC_ROOT || path.dirname(path.dirname(__filename));
 const INVENTORY = path.join(ROOT, "metadata", "master_media_inventory.csv");
 const ENTITY_GRAPH = path.join(ROOT, "metadata", "entity_graph.json");
@@ -251,9 +277,21 @@ const tools = {
 
 const server = http.createServer((req, res) => {
   const startTime = Date.now();
+  const clientIp = req.headers["x-forwarded-for"] || req.socket.remoteAddress || "unknown";
+
+  // Rate limiting check (WIL-005 fix)
+  const rateLimit = checkRateLimit(clientIp);
+  res.setHeader("X-RateLimit-Remaining", rateLimit.remaining);
+  res.setHeader("X-RateLimit-Reset", Math.ceil(rateLimit.resetIn / 1000));
+
+  if (!rateLimit.allowed) {
+    log("warn", "rate_limit_exceeded", { ip: clientIp, window: "60s", limit: RATE_LIMIT_MAX_REQUESTS });
+    res.writeHead(429, { "Retry-After": Math.ceil(rateLimit.resetIn / 1000) });
+    return res.end(JSON.stringify({ error: "Rate limit exceeded", retryAfter: Math.ceil(rateLimit.resetIn / 1000) }));
+  }
 
   if (req.method !== "POST") {
-    log("warn", "invalid_http_method", { method: req.method, path: req.url });
+    log("warn", "invalid_http_method", { method: req.method, path: req.url, ip: clientIp });
     res.writeHead(405);
     return res.end(JSON.stringify({ error: "POST only" }));
   }
