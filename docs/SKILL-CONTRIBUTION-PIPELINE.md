@@ -65,6 +65,11 @@ Currently: improvements stay local. Upstream creators miss value. Community does
 
 **File:** `~/.claude/skills/manifest.json`
 
+**Path Mapping:** Local skill → upstream file
+- Local: `~/.claude/skills/{skill-id}.md`
+- Upstream: `sourceRepo.url` + `sourceRepo.remotePath`
+- Example: `~/.claude/skills/fewer-permission-prompts.md` maps to `https://github.com/anthropics/claude-skills/blob/{branch}/skills/fewer-permission-prompts.md`
+
 ```json
 {
   "version": "1.0",
@@ -216,6 +221,47 @@ Currently: improvements stay local. Upstream creators miss value. Community does
 - [ ] Automated quality gates (require tests, min coverage %, perf benchmarks)
 - [ ] License & CLA handling (detect CLA requirement, auto-sign or escalate)
 - [ ] Contribution acceptance analytics (success rate per repo, feedback patterns)
+
+### 6. Authentication & Secrets
+
+**GitHub Token Storage:**
+- **MVP:** `.env` file in project root (git-ignored)
+  ```bash
+  GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  ```
+- **Validation:** Token checked on startup (attempt HEAD request to GitHub API)
+- **Phase 2:** OAuth callback or secrets manager integration
+
+**Token Permissions Required:**
+- `repo:status` — read repo status
+- `contents:read` — read file contents for diff
+- `pull_requests:write` — create PRs
+- `issues:write` — add PR comments
+
+**Security:** Never commit `.env`. Add to `.gitignore`. Warn if token exposed in logs.
+
+### 7. Error Handling & Resilience
+
+**Network & API Errors:**
+- Repo unavailable (404, timeout) → log warning, skip skill, continue
+- GitHub API rate limit (429) → backoff 60s, retry up to 3x
+- Auth failure (401) → halt all submissions, alert operator
+- Invalid manifest.json → fail startup with clear error
+
+**Diff Processing:**
+- Diff >1000 LOC → warn but proceed (assume intentional large improvement)
+- Binary files in diff → skip skill (can't create valid PR)
+- Untracked files (not in upstream repo) → exclude from diff
+
+**PR Creation Failures:**
+- Branch already exists → use sequential suffix (`contrib/skill-{name}-2`)
+- PR already exists for same skill → comment on existing PR instead of creating new one
+- GitHub returns 422 (validation failed) → log full response, escalate to operator
+
+**Polling & Stale Detection:**
+- GitHub API unreachable during daily check → skip, retry next cycle
+- PR >30 days with no activity → send escalation notification ("Follow up or close?")
+- PR closed without merging → log closure reason from PR comments
 
 ---
 
