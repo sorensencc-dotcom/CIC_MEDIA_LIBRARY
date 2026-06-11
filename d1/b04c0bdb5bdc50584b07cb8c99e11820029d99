@@ -1,0 +1,34 @@
+scripts/validate-startup.js
+  s_23364b39b23e42::t_b08acfcf3f4fc1 1-62,64-88
+  s_23364b39b23e42::t_569cdd12420c53 63
+scripts/cic-mcp-server.js
+  s_23364b39b23e42::t_5862c435d84ab0 12-13,16,22-27
+  s_23364b39b23e42::t_d8387e25933001 4
+  s_23364b39b23e42::t_f2d2f64ce2acd2 318-321,327
+  s_23364b39b23e42::t_7be00658037de0 303,306-311
+  s_11e3db3bad7709::t_350ace18139a32 6-11,20,30-70,72-249,269-272,274-277,280-284,288-293,295-300,304-305,326,339-341
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "d1b04c0bdb5bdc50584b07cb8c99e11820029d99",
+  "prompts": {},
+  "sessions": {
+    "s_11e3db3bad7709": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5362ab0c-55ab-4613-b771-eb29a76916d8",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    },
+    "s_23364b39b23e42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "634d2733-de5b-486e-a577-4a51780bbf56",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
