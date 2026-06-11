@@ -1,0 +1,19 @@
+docs/WAYLAND_FIXES_SUMMARY.md
+  s_23364b39b23e42::t_e55c7e5b7e45ae 1-211
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f80ccf5e169e7203b1ac94f2c36f6685c51bc3dd",
+  "prompts": {},
+  "sessions": {
+    "s_23364b39b23e42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "634d2733-de5b-486e-a577-4a51780bbf56",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
