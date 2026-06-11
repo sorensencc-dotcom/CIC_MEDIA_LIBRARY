@@ -1,0 +1,21 @@
+docs/SKILL-CONTRIBUTION-PIPELINE.md
+  s_23364b39b23e42::t_86c53843dffd8e 241-248
+  s_23364b39b23e42::t_db119becd54227 253-257
+  s_23364b39b23e42::t_887e464107b937 265-268,271-274
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f1500ee31db97c1bb65b7abcbfe7829f66ed3c3e",
+  "prompts": {},
+  "sessions": {
+    "s_23364b39b23e42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "634d2733-de5b-486e-a577-4a51780bbf56",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
