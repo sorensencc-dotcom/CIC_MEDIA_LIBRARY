@@ -1,0 +1,21 @@
+scripts/monitor-nvidia-api-errors.ts
+  s_7bbb786c5bdab7::t_c7ab63b77e9329 1-275
+tests/nvidia-api-compliance.test.ts
+  s_7bbb786c5bdab7::t_c4f411088210b0 1-190
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "b2dadbdce6aa0302c4cdc0aee0b849a5848cd685",
+  "prompts": {},
+  "sessions": {
+    "s_7bbb786c5bdab7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cafe39c1-6d11-4ed3-ade6-57281359f45a",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Soren Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
